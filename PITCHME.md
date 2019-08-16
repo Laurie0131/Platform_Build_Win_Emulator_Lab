@@ -44,7 +44,6 @@ Note:
 @title[Lesson Objective]
 
 ### <p align="center"<span class="gold"   >Platform Build Labs </span></p>
-<span style="font-size:0.9em">Lab Setup and Build for Nt32 or Minnowboard Max/Turbot</span> <br>
 <br>
 <!---  Add bullets using https://fontawesome.com/cheatsheet certificate
 -->
@@ -77,8 +76,6 @@ Note:
 <br>
 <br>
 <br>
-<br>
-<br>
 <p style="line-height:80%" align="left"><span style="font-size:0.80em;  " >Steps to Pin Visual Studio Command Prompt to task bar for Windows 10 </span></p>
 <ol style="line-height:0.8;">
  <li><span style="font-size:0.80em;  " >Using the Start menu in Windows 10, Left Click on "Windows Key" Lower Left @fa[windows gp-bullet-cyan]</span></li>
@@ -101,8 +98,6 @@ Note:
 <br>
 <br>
 <br>
-<br>
-<br>
 <p style="line-height:80%" align="left"><span style="font-size:0.80em;  " >4. Left Click <b>"Visual Studio Tools"</b> </span></p>
 <br>
 <p style="line-height:80%" align="left"><span style="font-size:0.80em;  " >This will open another Windows file explorer window <br></span><span style="font-size:0.60em;  " > Note: <i>VS 2013 example, other version of VS maybe different</i>  </span></p>
@@ -119,9 +114,6 @@ Note:
 @title[Pin VS CMD Prompt 03]
 ### <p align="right"><span class="gold" >Pin  VS Command Prompt</span></p>
 @snap[north-east span-50 ]
-<br>
-<br>
-<br>
 <br>
 <br>
 <p style="line-height:80%" align="left"><span style="font-size:0.80em;  " >5. Select <b>"Developer Command Prompt for VS201<i>n</i>"</b> </span></p>
@@ -152,7 +144,7 @@ Note:
 
 
 
----?image=/assets/images/slides8/Slide8.JPG
+---?image=/assets/images/slides/Slide8.JPG
 @title[Pin VS CMD Prompt 05]
 ### <p align="right"><span class="gold" >Pin  VS Command Prompt</span></p>
 
@@ -160,10 +152,9 @@ Note:
 <br>
 <br>
 <br>
-<p style="line-height:80%" align="left"><span style="font-size:0.80em;  " >8. Open the VS Command Prompt </span></p>
+<p style="line-height:80%" align="left"><span style="font-size:0.80em;" >8. Open the VS Command Prompt </span></p>
 <br>
-<p style="line-height:80%" align="left"><span style="font-size:0.80em;  " >
-All Windows Labs use this short-cut to Build Edk II platforms and projects using Windows Visual Studio :<br>
+<p style="line-height:60%" align="left"><span style="font-size:0.65em; ">&nbsp;  All Windows Labs use this short-cut to Build Edk II platforms and projects using Windows Visual Studio :<br>
 2010 / 2012 / 2013 / 2015 or 2017</span></p>
 @snapend
 Note:
