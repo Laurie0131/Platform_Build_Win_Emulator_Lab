@@ -154,8 +154,8 @@ Note:
 <br>
 <p style="line-height:80%" align="left"><span style="font-size:0.80em;" >8. Open the VS Command Prompt </span></p>
 <br>
-<p style="line-height:60%" align="left"><span style="font-size:0.65em; ">&nbsp;  All Windows Labs use this short-cut to Build Edk II platforms and projects using Windows Visual Studio :<br>
-2010 / 2012 / 2013 / 2015 or 2017</span></p>
+<p style="line-height:60%" align="left"><span style="font-size:0.65em; ">&nbsp;  All Windows Labs use this short-cut to Build Edk II platforms and projects using Windows Visual Studio<br>
+@size[.75em](2010 / 2012 / 2013 / 2015 or 2017)</span></p>
 @snapend
 Note:
 
@@ -184,7 +184,7 @@ Note:
 
 <span style="font-size:0.9em" ><i>OPTIONAL</i> - Open a  “git” command prompt and create a source working directory</span>
 ```
- C:\>mkdir WS
+ C:\> mkdir WS
  C:\> cd WS
 ```
 
@@ -211,7 +211,7 @@ Note:
 
 OPTIONAL - Open a  “git” command prompt and create a source working directory
 <pre>
-- C:\>mkdir WS
+- C:\> mkdir WS
 - C:\> cd WS
 
 - OPTIONAL - Internet Proxies – (company Firewall used for example)
@@ -290,11 +290,11 @@ Extract the Downloaded Lab_Material_FW.zip to Home (this will create a directory
 
 @snap[north-west span-100 ]
 <br>
-<p style="line-height:80%" align="left"><span style="font-size:0.80em;  " >
-2. Open a VS command prompt <br>
-3. Create a working space directory "FW" <br>&nbsp;&nbsp;<font face="Consolas"><span style="background-color: #000000; font-size:0.50em;"> 
-&nbsp;&nbsp;C:\&gt; mkdir FW&nbsp;&nbsp;</span></font><br>
-4. From the downloaded "<font face="Consolas">Lab_Material_FW</font>" folder, <b>copy</b>&nbsp;and &nbsp;<b>paste</b> folder &nbsp;"<font face="Consolas">...\edk2-ws</font>"
+<p style="line-height:60%" align="left"><span style="font-size:0.75em;  " >
+ 2. Open a VS command prompt <br>
+ 3. Create a working space directory "FW" <br>&nbsp;&nbsp;<span style="background-color: #000000; font-size:0.50em;"> 
+&nbsp;&nbsp;<font face="Consolas">@size[.7em](C:\ &gt; mkdir FW)</font>&nbsp;&nbsp;</span><br>
+ 4. From the downloaded "<font face="Consolas">Lab_Material_FW</font>" folder, <b>copy</b>&nbsp;and &nbsp;<b>paste</b> folder &nbsp;"<font face="Consolas">...\edk2-ws</font>"
 &nbsp; to &nbsp;<font face="Consolas">C:/FW</font>
 </span></p>
 <br>
@@ -316,15 +316,15 @@ Note:
 
 @snap[north-east span-50 ]
 <br>
-<p align="right"><span style="font-size:0.8em" ><font color="#e49436">–Get Nasm</font></span></p>
+<p align="right"><span style="font-size:0.8em" ><font color="#e49436">–Get Nasm&nbsp;</span></p>
 @snapend
 
 @snap[north-west span-100 ]
 <br>
 <br>
 <br>
-<p style="line-height:80%" align="left"><span style="font-size:0.80em;  " >
-Copy the  <font face="Consolas">Nasm</font> directory to <font face="Consolas">C:\</font><br>
+<p style="line-height:50%" align="left"><span style="font-size:0.80em;  " >
+Copy the <font face="Consolas">Nasm</font> directory to <font face="Consolas"> C:\ &nbsp;</font><br>
 @size[.7em](&lpar;creating <font face="Consolas">C:\Nasm</font> directory&rpar;)
 </span></p>
 <br>
@@ -376,40 +376,38 @@ Note:
 
 @snap[north-east span-50 ]
 <br>
-<p style="line-height:80%" align="right"><span style="font-size:0.8em" ><br>@color[#e49436](– build<font face="Consolas">BaseTools</font>)</span></p>
+<p style="line-height:80%" align="right"><span style="font-size:0.8em" ><br>@color[#e49436](– build <font face="Consolas">BaseTools</font>)</span></p>
 @snapend
 
 @snap[north-west span-100 ]
 <br>
 <br>
-<br>
-<br>
 <p style="line-height:80%" align="left"><span style="font-size:0.80em;  " >
 Open VS Command prompt & Cd to work space directory 
 </span></p>
-<pre lang="xml">
+<pre>
 ```
- $> cd C:\FW\edk2-ws
+ $ cd C:\FW\edk2-ws
 
 ```
 </pre>
 <p style="line-height:80%" align="left"><span style="font-size:0.80em;  " >
 Setup the local environment: (see batch file setenv.bat )
 </span></p>
-<pre lang="xml">
+<pre>
 ```
- $> set WORKSPACE=%CD%
- $> set PACKAGES_PATH=%WORKSPACE%\edk2;%WORKSPACE%\edk2-libc
+ $ set WORKSPACE=%CD%
+ $ set PACKAGES_PATH=%WORKSPACE%\edk2;%WORKSPACE%\edk2-libc
 
 ```
 </pre>
 <p style="line-height:80%" align="left"><span style="font-size:0.80em;  " >
 Invoke <font face="Consolas">Edksetup.bat</font> from directory <font face="Consolas">C:/FW/edk2-ws/edk2  </font> to build <font face="Consolas">BaseTools</font><br> @size[.7em](&nbsp;&lpar;now uses Python 3.7.x&rpar;)
 </span></p>
-<pre lang="xml">
+<pre>
 ```
-  $> cd edk2
-  $> edksetup.bat Rebuild
+  $ cd edk2
+  $ edksetup.bat Rebuild
 ```
 </pre>
 
@@ -455,13 +453,13 @@ Invoke <font face="Consolas">Edksetup.bat</font> from directory <font face="Cons
 @snap[north-west span-100 ]
 <br>
 <br>
-<p style="line-height:80%" align="left">@size[1.10em](EmulatorPkg)<span style="font-size:0.80em;  " > - Build with edk2<br>
+<p style="line-height:70%" align="left">@size[1.0em](EmulatorPkg)<span style="font-size:0.80em;  " > - Build with edk2<br>
 Invoke <font face="Consolas">Edksetup.bat</font> 
 </span></p>
-<pre lang="xml">
+<pre>
 ```
-  $> cd C:\FW\edk2-ws\edk2
-  $> edksetup.bat 
+  $ cd C:\FW\edk2-ws\edk2
+  $ edksetup.bat 
 ```
 </pre>
 <p style="line-height:60%" align="left"><span style="font-size:0.80em;  " >
@@ -470,14 +468,14 @@ Edit the file "<font face="Consolas">Conf/target.txt</font>" </span><span style=
 <br>
 @snapend
 
-@snap[south-west span-100 ]
-<p style="line-height:50" align="left"><span style="font-size:0.5m; font-family:Consolas; " >
+@snap[south-west span-50 ]
+<p style="line-height:45%" align="left"><font color="black"><span style="font-size:0.45em; font-family:Consolas; " >
 &nbsp;&nbsp;&nbsp;&nbsp; TARGET_ARCH&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;           = X64<br>
 	&nbsp;&nbsp;&nbsp;&nbsp;. . .<br>
 &nbsp;&nbsp;&nbsp;&nbsp; TOOL_CHAIN_TAG&nbsp;&nbsp;        = VS2015x86<br>
 <br>
 <br>
-</span></p>
+</span></font></p>
 <br>
 @snapend
 
@@ -488,7 +486,7 @@ Save and Exit <br>
 </span></p>
 <pre lang="bash">
 ```
-   $> build –D ADD_SHELL_STRING –D WIN_SEC_BUILD -a X64
+   $ build –D ADD_SHELL_STRING –D WIN_SEC_BUILD -a X64
 
 ```
 </pre>
