@@ -289,9 +289,8 @@ Extract the Downloaded Lab_Material_FW.zip to Home (this will create a directory
 @snapend
 
 
-<br>
 <p style="line-height:70%" align="left"><span style="font-size:0.7em;  " > 2. Open a VS command prompt <br> 3. Create a working space directory "FW" 
-</span>
+</span></p>
 <pre>
 ```
   $> Mkdir FW
@@ -322,9 +321,6 @@ Note:
 <p align="right"><span style="font-size:0.8em" ><font color="#e49436">–Get Nasm&nbsp;</font></span></p>
 @snapend
 
-<br>
-<br>
-<br>
 <p style="line-height:70%" align="left"><span style="font-size:0.8em;  " >
 Copy the <font face="Consolas">Nasm</font> directory to <font face="Consolas"> C:\ &nbsp;</font>
 @size[.7em](<br>&lpar;creating <font face="Consolas">C:\Nasm</font> directory&rpar;)
@@ -338,7 +334,7 @@ Copy the <font face="Consolas">Nasm</font> directory to <font face="Consolas"> C
 
 @snap[north-east span-50 ]
 <br>
-<p style="line-height:80%" align="right"><span style="font-size:0.8em" ><font color="#e49436">– Download and install Python</font></span></p>
+<p style="line-height:80%" align="right"><span style="font-size:0.8em" ><br><font color="#e49436">– Download and install Python</font></span></p>
 @snapend
 
 @snap[north-west span-60 ]
@@ -381,7 +377,6 @@ Note:
 @snapend
 
 
-<br>
 <p style="line-height:70%" align="left"><span style="font-size:0.750em;  " >
 Open VS Command prompt & Cd to work space directory 
 </span></p>
@@ -425,9 +420,10 @@ Invoke <font face="Consolas">Edksetup.bat</font> from directory <font face="Cons
 </span></p>
 @snapend
 
+
+
 @snap[south-west span-100 ]
-<p style="line-height:90%" align="right"><span style="font-size:0.50em;  " >
-@color[white](Building <font face="Consolas">BaseTools</font> only needs to be done once but setting up local environment and edksetup.bat needs to be done each new VS prompt session)
+<p style="line-height:30%" align="right"><span style="font-size:0.45em;  " >@color[white](Building <font face="Consolas">BaseTools</font> only needs to be done once but setting up local environment and edksetup.bat needs to be done each new VS prompt session)
 </span></p>
 <br>
 @snapend
@@ -450,10 +446,7 @@ Invoke <font face="Consolas">Edksetup.bat</font> from directory <font face="Cons
 <p align="right"><span style="font-size:0.8em" ><font color="#e49436">–Update Target.txt</font></span></p>
 @snapend
 
-
-<br>
-<br>
-<p style="line-height:50%" align="left"><span style="font-size:0.750em;">@size[1.0em](EmulatorPkg) - Build with edk2
+<p style="line-height:70%" align="left"><span style="font-size:0.750em;">@size[1.0em](EmulatorPkg) - Build with edk2
 <br>Invoke <font face="Consolas">Edksetup.bat</font> 
 </span></p>
 <pre>
@@ -467,16 +460,16 @@ Edit the file "<font face="Consolas">Conf/target.txt</font>" </span><span style=
 &lpar;change <font face="Consolas">TOOL_CHAIN_TAG</font>&rpar; &nbsp;&nbsp;<font face="Consolas">Notepad Conf/target.txt</font></span></p>
 
 @snap[south-west span-50 ]
-<p style="line-height:80%" align="left" ><span style="font-size:0.85em; font-family:Consolas;"><font color="black"> &nbsp;&nbsp;&nbsp;&nbsp; TARGET_ARCH&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;           = X64<br> &nbsp;&nbsp;&nbsp;&nbsp;. . .<br> &nbsp;&nbsp;&nbsp;&nbsp; TOOL_CHAIN_TAG&nbsp;&nbsp;        = VS2015x86<br><br><br></font></span></p>
+<p style="line-height:40%" align="left" ><span style="font-size:0.45em; font-family:Consolas;"><font color="black"> &nbsp;&nbsp;&nbsp;&nbsp; TARGET_ARCH&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;           = X64<br> &nbsp;&nbsp;&nbsp;&nbsp;. . .<br> &nbsp;&nbsp;&nbsp;&nbsp; TOOL_CHAIN_TAG&nbsp;&nbsp;        = VS2015x86<br><br><br></font></span></p>
 <br>
 @snapend
 
 @snap[south-west span-100 ]
-<p style="line-height:60%" align="left"><span style="font-size:0.75em;  " >
+<p style="line-height:40%" align="left"><span style="font-size:0.75em;  " >
 Save and Exit <br>
 <b>Build EmulatorPkg</b>
 <font face="Consolas">
-&nbsp; $ &gt; build –D ADD_SHELL_STRING –D WIN_SEC_BUILD -a X64
+@size[.4em](&nbsp; $ &gt; build –D ADD_SHELL_STRING –D WIN_SEC_BUILD -a X64)
 </font>
 </span></p>
 @snapend
