@@ -288,20 +288,20 @@ Extract the Downloaded Lab_Material_FW.zip to Home (this will create a directory
 <p align="right"><span style="font-size:0.8em" ><font color="#e49436">– Copy <font face="Consolas">edk2-ws</font></font></span></p>
 @snapend
 
-@snap[north-west span-100 ]
+
 <br>
-<p style="line-height:50%" align="left"><span style="font-size:0.7em;  " > 2. Open a VS command prompt <br> 3. Create a working space directory "FW" 
+<p style="line-height:70%" align="left"><span style="font-size:0.7em;  " > 2. Open a VS command prompt <br> 3. Create a working space directory "FW" 
 </span>
 <pre>
 ```
-  Mkdir FW
+  $> Mkdir FW
 ```
 </pre>
-<p style="line-height:50%" align="left"><span style="font-size:0.65em;  " > 4. From the downloaded "<font face="Consolas">Lab_Material_FW</font>" folder, <b>copy</b>&nbsp;and &nbsp;<b>paste</b> folder &nbsp;"<font face="Consolas">...\edk2-ws</font>"
+<p style="line-height:70%" align="left"><span style="font-size:0.65em;  " > 4. From the downloaded "<font face="Consolas">Lab_Material_FW</font>" folder, 
+<b>copy</b>&nbsp;and &nbsp;<b>paste</b> folder &nbsp;"<font face="Consolas">...\edk2-ws</font>"
 &nbsp; to &nbsp;<font face="Consolas">C:/FW</font>
 </span></p>
 <br>
-@snapend
 
 
 Note:
@@ -322,16 +322,14 @@ Note:
 <p align="right"><span style="font-size:0.8em" ><font color="#e49436">–Get Nasm&nbsp;</font></span></p>
 @snapend
 
-@snap[north-west span-100 ]
 <br>
 <br>
 <br>
-<p style="line-height:40%" align="left"><span style="font-size:0.80em;  " >
-Copy the <font face="Consolas">Nasm</font> directory to <font face="Consolas"> C:\ &nbsp;</font><br>
-@size[.7em](&lpar;creating <font face="Consolas">C:\Nasm</font> directory&rpar;)
+<p style="line-height:70%" align="left"><span style="font-size:0.8em;  " >
+Copy the <font face="Consolas">Nasm</font> directory to <font face="Consolas"> C:\ &nbsp;</font>
+@size[.7em](<br>&lpar;creating <font face="Consolas">C:\Nasm</font> directory&rpar;)
 </span></p>
 <br>
-@snapend
 
 
 ---
@@ -340,7 +338,7 @@ Copy the <font face="Consolas">Nasm</font> directory to <font face="Consolas"> C
 
 @snap[north-east span-50 ]
 <br>
-<p style="line-height:80%" align="right"><span style="font-size:0.8em" ><font color="#e49436"><br>– Download and install Python</font></span></p>
+<p style="line-height:80%" align="right"><span style="font-size:0.8em" ><font color="#e49436">– Download and install Python</font></span></p>
 @snapend
 
 @snap[north-west span-60 ]
@@ -379,13 +377,12 @@ Note:
 
 @snap[north-east span-50 ]
 <br>
-<p style="line-height:80%" align="right"><span style="font-size:0.8em" >@color[#e49436](– build <font face="Consolas">BaseTools</font>)</span></p>
+<p style="line-height:80%" align="right"><span style="font-size:0.8em" ><br>@color[#e49436](– build <font face="Consolas">BaseTools</font>)</span></p>
 @snapend
 
-@snap[north-west span-100 ]
+
 <br>
-<br>
-<p style="line-height:80%" align="left"><span style="font-size:0.80em;  " >
+<p style="line-height:70%" align="left"><span style="font-size:0.750em;  " >
 Open VS Command prompt & Cd to work space directory 
 </span></p>
 <pre>
@@ -394,7 +391,7 @@ Open VS Command prompt & Cd to work space directory
 
 ```
 </pre>
-<p style="line-height:80%" align="left"><span style="font-size:0.80em;  " >
+<p style="line-height:70%" align="left"><span style="font-size:0.75em;  " >
 Setup the local environment: (see batch file setenv.bat )
 </span></p>
 <pre>
@@ -404,7 +401,7 @@ Setup the local environment: (see batch file setenv.bat )
 
 ```
 </pre>
-<p style="line-height:80%" align="left"><span style="font-size:0.80em;  " >
+<p style="line-height:70%" align="left"><span style="font-size:0.75em;  " >
 Invoke <font face="Consolas">Edksetup.bat</font> from directory <font face="Consolas">C:/FW/edk2-ws/edk2  </font> to build <font face="Consolas">BaseTools</font><br> @size[.7em](&nbsp;&lpar;now uses Python 3.7.x&rpar;)
 </span></p>
 <pre>
@@ -414,7 +411,7 @@ Invoke <font face="Consolas">Edksetup.bat</font> from directory <font face="Cons
 ```
 </pre>
 
-@snapend
+
 
 @snap[east span-40 fragment ]
 <br>
@@ -453,46 +450,35 @@ Invoke <font face="Consolas">Edksetup.bat</font> from directory <font face="Cons
 <p align="right"><span style="font-size:0.8em" ><font color="#e49436">–Update Target.txt</font></span></p>
 @snapend
 
-@snap[north-west span-100 ]
+
 <br>
 <br>
-<p style="line-height:70%" align="left">@size[1.0em](EmulatorPkg)<span style="font-size:0.80em;  " > - Build with edk2<br>
-Invoke <font face="Consolas">Edksetup.bat</font> 
+<p style="line-height:50%" align="left"><span style="font-size:0.750em;">@size[1.0em](EmulatorPkg) - Build with edk2
+<br>Invoke <font face="Consolas">Edksetup.bat</font> 
 </span></p>
 <pre>
 ```
-   cd C:\FW\edk2-ws\edk2
-   edksetup.bat 
+   $> cd C:\FW\edk2-ws\edk2
+   $> edksetup.bat 
 ```
 </pre>
-<p style="line-height:60%" align="left"><span style="font-size:0.80em;  " >
+<p style="line-height:60%" align="left"><span style="font-size:0.75em;  " >
 Edit the file "<font face="Consolas">Conf/target.txt</font>" </span><span style="font-size:0.50em;  " > <br>
 &lpar;change <font face="Consolas">TOOL_CHAIN_TAG</font>&rpar; &nbsp;&nbsp;<font face="Consolas">Notepad Conf/target.txt</font></span></p>
-<br>
-@snapend
 
 @snap[south-west span-50 ]
-<p style="line-height:45%" align="left"><font color="black"><span style="font-size:0.45em; font-family:Consolas; " >
-&nbsp;&nbsp;&nbsp;&nbsp; TARGET_ARCH&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;           = X64<br>
-	&nbsp;&nbsp;&nbsp;&nbsp;. . .<br>
-&nbsp;&nbsp;&nbsp;&nbsp; TOOL_CHAIN_TAG&nbsp;&nbsp;        = VS2015x86<br>
-<br>
-<br>
-</span></font></p>
+<p style="line-height:80%" align="left" ><span style="font-size:0.85em; font-family:Consolas;"><font color="black"> &nbsp;&nbsp;&nbsp;&nbsp; TARGET_ARCH&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;           = X64<br> &nbsp;&nbsp;&nbsp;&nbsp;. . .<br> &nbsp;&nbsp;&nbsp;&nbsp; TOOL_CHAIN_TAG&nbsp;&nbsp;        = VS2015x86<br><br><br></font></span></p>
 <br>
 @snapend
 
 @snap[south-west span-100 ]
-<p style="line-height:90%" align="left"><span style="font-size:0.80em;  " >
+<p style="line-height:60%" align="left"><span style="font-size:0.75em;  " >
 Save and Exit <br>
 <b>Build EmulatorPkg</b>
+<font face="Consolas">
+&nbsp; $ &gt; build –D ADD_SHELL_STRING –D WIN_SEC_BUILD -a X64
+</font>
 </span></p>
-<pre lang="bash">
-```
-    build –D ADD_SHELL_STRING –D WIN_SEC_BUILD -a X64
-
-```
-</pre>
 @snapend
 
 
