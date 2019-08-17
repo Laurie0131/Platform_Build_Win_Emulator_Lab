@@ -416,7 +416,7 @@ Building BaseTools only needs to be done once but setting up local environment a
 <p align="right"><span class="gold" >@size[1.1em](<b>Build EDK II  </b>)</span><br>
 <span style="font-size:0.75em;" > – Update <font face="Consolas">Target.txt</font></span></p>
 
-@snap[north-west span-60 ]
+@snap[north-west span-70 ]
 <br>
 <p style="line-height:60%" align="left" ><span style="font-size:0.7em;" >
 @size[1.1em](<b>EmulatorPkg</b>) - Build with edk2  <br><br>
