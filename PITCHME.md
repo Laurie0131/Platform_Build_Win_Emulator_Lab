@@ -418,15 +418,14 @@ Building BaseTools only needs to be done once but setting up local environment a
 
 @snap[north-west span-60 ]
 <br>
-<br>
 <p style="line-height:60%" align="left" ><span style="font-size:0.7em;" >
-@size[1.1em](<b>EmulatorPkg</b>) - Build with edk2  <br>
+@size[1.1em](<b>EmulatorPkg</b>) - Build with edk2  <br><br>
 Invoke <font face="Consolas">Edksetup.bat </font>
 </span></p>
-<p style="line-height:50%" align="left" ><span style="font-size:0.5em; font-family:Consolas;">
+<p style="line-height:45%" align="left" ><span style="font-size:0.5em; font-family:Consolas;">
 <span style="background-color: #000000">
 &nbsp;&nbsp;$&gt; cd C:\FW\edk2-ws\edk2 &nbsp;&nbsp;   <br>
-&nbsp;&nbsp;$&gt; edksetup.bat &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <br>
+&nbsp;&nbsp;$&gt; edksetup.bat &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <br>
 </span>
 </span></p>
 
@@ -444,6 +443,10 @@ Edit the file Conf/target.txt @size[.7em](&lpar;change Tool_Chain_Tag&rpar;<br>)
 <br>
 <br>
 <br>
+<br>
+<br>
+<br>
+<br>
 <p style="line-height:50%" align="left" ><span style="font-size:0.5em; font-family:Consolas;">
 <font color="black">
 &nbsp;&nbsp;TARGET_ARCH&nbsp;&nbsp;&nbsp;&nbsp;           = X64 <br>
@@ -455,8 +458,10 @@ Edit the file Conf/target.txt @size[.7em](&lpar;change Tool_Chain_Tag&rpar;<br>)
 
 
 @snap[south-west span-100 ]
-<p style="line-height:50%" align="left" ><span style="font-size:0.7em;" >
+<p style="line-height:50%" align="left" ><span style="font-size:0.75em;" >
 @size[.8em](<b>Save</b> and <b>Exit</b>)<br>
+<br>
+<br>
 <b>Build Emulator</b>
 </span></p>
 <p style="line-height:50%" align="left" ><span style="font-size:0.5em; font-family:Consolas;">
