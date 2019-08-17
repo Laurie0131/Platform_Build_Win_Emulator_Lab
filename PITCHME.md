@@ -240,7 +240,7 @@ OPTIONAL - Open a  “git” command prompt and create a source working director
 <br>
 <span style="font-size:0.9em" >OR<br>Use `git clone` to download the Lab_Material_FW<span>
 ```bash
-$ git clone https://github.com/tianocore-training/Lab_Material_FW.git
+C:\> git clone https://github.com/tianocore-training/Lab_Material_FW.git
 ```
 <span style="font-size:0.9em" >Directory Lab_Material_FW will be created</span>
 ```
@@ -258,22 +258,16 @@ Note:
 
 ---?image=/assets/images/slides/Slide14.JPG
 @title[Build  Edk2 -getting the Source ]
-### <p align="right"><span class="gold" >Build EDK II </span></span></p>
-@snap[north-east span-50 ]
-<br>
-<p align="right"><span style="font-size:0.8em" ><font color="#e49436">–Extract the Source</font></span></p>
-@snapend
+<p align="right"><span class="gold" >@size[1.1em](<b>Build EDK II  </b>)</span><br>
+<span style="font-size:0.75em;" >– Extract the Source  </span></p>
 
 @snap[north-west span-100 ]
 <br>
 <br>
 <br>
-<p style="line-height:80%" align="left"><span style="font-size:0.80em;  " >1. Extract the Downloaded <font face="Consolas">Lab_Material_FW-master.zip</font> to <font face="Consolas">C:\</font> </span></p>
+<p style="line-height:80%" align="left"><span style="font-size:0.80em;  " >1. Extract the Downloaded <font face="Consolas">Lab_Material_FW-master.zip to C:\ </font> </span></p>
 <br>
 @snapend
-
-
-
 
 
 
@@ -282,25 +276,19 @@ Extract the Downloaded Lab_Material_FW.zip to Home (this will create a directory
 
 ---?image=/assets/images/slides/Slide15.JPG
 @title[Build  Edk2 -getting the Source 02]
-### <p align="right"><span class="gold" >Build EDK II</span></span></p>
-@snap[north-east span-50 ]
+<p align="right"><span class="gold" >@size[1.1em](<b>Build EDK II  </b>)</span><br>
+<span style="font-size:0.75em;" > - Copy edk2-ws </span></p>
+
+@snap[north-west span-100 ]
 <br>
-<p align="right"><span style="font-size:0.8em" ><font color="#e49436">– Copy <font face="Consolas">edk2-ws</font></font></span></p>
+<p style="line-height:70%" align="left" ><span style="font-size:0.7em;" >2. Open a VS command prompt <br> 3. 
+Create a working space directory "FW" <br>
+<span style="background-color: #000000"><font face="Consolas">&nbsp;&nbsp; C:&bsol;&gt; mkdir FW &nbsp&nbsp; </font></span>
+<br>4.From the downloaded Lab_Material_FW folder, <b>copy</b> and <b>paste</b> folder <font face="Consolas">"..\edk2-ws" to "C:/FW"</font>
+</span></p>
+
 @snapend
 
-
-<p style="line-height:70%" align="left"><span style="font-size:0.7em;  " > 2. Open a VS command prompt <br> 3. Create a working space directory "FW" 
-</span></p>
-<pre>
-```
-  $> Mkdir FW
-```
-</pre>
-<p style="line-height:70%" align="left"><span style="font-size:0.65em;  " > 4. From the downloaded "<font face="Consolas">Lab_Material_FW</font>" folder, 
-<b>copy</b>&nbsp;and &nbsp;<b>paste</b> folder &nbsp;"<font face="Consolas">...\edk2-ws</font>"
-&nbsp; to &nbsp;<font face="Consolas">C:/FW</font>
-</span></p>
-<br>
 
 
 Note:
@@ -314,28 +302,29 @@ Note:
 
 ---?image=/assets/images/slides/Slide16.JPG
 @title[Build  Edk2 -get Nasm]
-### <p align="right"><span class="gold" >Build EDK II </span></span></p>
+<p align="right"><span class="gold" >@size[1.1em](<b>Build EDK II  </b>)</span><br>
+<span style="font-size:0.75em;" > - Get Nasm </span></p>
 
-@snap[north-east span-50 ]
+@snap[north-west span-70 ]
 <br>
-<p align="right"><span style="font-size:0.8em" ><font color="#e49436">–Get Nasm&nbsp;</font></span></p>
+<p style="line-height:70%" align="left" ><span style="font-size:0.7em;" >5. 
+Copy<font face="Consolas"> Nasm </font> directory to <font face="Consolas">C:&bsol;</font><br>
+@size[.7em](&lpar(creating <font face="Consolas">C:&bsol;Nasm</font> directory&rpar;)
+</span></p>
+
 @snapend
 
-<p style="line-height:70%" align="left"><span style="font-size:0.8em;  " >
-Copy the <font face="Consolas">Nasm</font> directory to <font face="Consolas"> C:\ &nbsp;</font>
-@size[.7em](<br>&lpar;creating <font face="Consolas">C:\Nasm</font> directory&rpar;)
-</span></p>
-<br>
+Note:
+
+Copy Nasm directory to C:\
+(creating C:\Nasm directory)
 
 
 ---
 @title[Build  Edk2 -install Python]
-### <p align="right"><span class="gold" >Build EDK II</span></span></p>
+<p align="right"><span class="gold" >@size[1.1em](<b>Build EDK II  </b>)</span><br>
+<span style="font-size:0.75em;" > – Download and install Python </span></p>
 
-@snap[north-east span-50 ]
-<br>
-<p style="line-height:80%" align="right"><span style="font-size:0.8em" ><br><font color="#e49436">– Download and install Python</font></span></p>
-@snapend
 
 @snap[north-west span-60 ]
 <br>
@@ -369,42 +358,30 @@ Note:
 
 ---
 @title[Build  Edk2 -build BaseTools]
-### <p align="right"><span class="gold" >Build EDK II</span></span></p>
+<p align="right"><span class="gold" >@size[1.1em](<b>Build EDK II  </b>)</span><br>
+<span style="font-size:0.75em;" > – build <font face="Consolas">BaseTools</font>)</span></p>
 
-@snap[north-east span-50 ]
+@snap[north-west span-100 ]
 <br>
-<p style="line-height:80%" align="right"><span style="font-size:0.8em" ><br>@color[#e49436](– build <font face="Consolas">BaseTools</font>)</span></p>
+<p style="line-height:70%" align="left" ><span style="font-size:0.7em;" >
+Open VS Command prompt & Cd to work space directory <br>
+
+<span style="background-color: #000000"><font face="Consolas">
+&nbsp;&nbsp;cd  C:&bsol;&gt;FW\edk2-ws &nbsp&nbsp;&nbsp&nbsp; </font></span> <br>
+Setup the local environment: (see batch file setenv.bat )
+<span style="background-color: #000000"><font face="Consolas">
+@size[.7em](&nbsp;&nbsp;$&gt; set WORKSPACE=%CD%  &nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;)<Br>
+@size[.7em](&nbsp;&nbsp;$&gt; set PACKAGES_PATH=%WORKSPACE%\edk2;%WORKSPACE%\edk2-libc  &nbsp&nbsp;&nbsp&nbsp;  )</font></span> <br>
+Invoke Edksetup.bat from directory <font face="Consolas">C:/FW/edk2-ws/edk2</font> to Build <font face="Consolas">BaseTools </font><br>
+<span style="background-color: #000000"><font face="Consolas">
+@size[.7em](&nbsp;&nbsp;$&gt; cd edk2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;)<br>
+@size[.7em](&nbsp;&nbsp;$&gt; edksetup.bat Rebuild&nbsp;&nbsp;&nbsp;&nbsp;)</font></span> <br>
+<br>
+@size[.7em](Building BaseTools only needs to be done once but setting up local environment and edksetup.bat needs to be done each new VS prompt session)
+</span></p>
+
 @snapend
 
-
-<p style="line-height:70%" align="left"><span style="font-size:0.750em;  " >
-Open VS Command prompt & Cd to work space directory 
-</span></p>
-<pre>
-```
-  cd C:\FW\edk2-ws
-
-```
-</pre>
-<p style="line-height:70%" align="left"><span style="font-size:0.75em;  " >
-Setup the local environment: (see batch file setenv.bat )
-</span></p>
-<pre>
-```
-  set WORKSPACE=%CD%
-  set PACKAGES_PATH=%WORKSPACE%\edk2;%WORKSPACE%\edk2-libc
-
-```
-</pre>
-<p style="line-height:70%" align="left"><span style="font-size:0.75em;  " >
-Invoke <font face="Consolas">Edksetup.bat</font> from directory <font face="Consolas">C:/FW/edk2-ws/edk2  </font> to build <font face="Consolas">BaseTools</font><br> @size[.7em](&nbsp;&lpar;now uses Python 3.7.x&rpar;)
-</span></p>
-<pre>
-```
-   cd edk2
-   edksetup.bat Rebuild
-```
-</pre>
 
 
 
@@ -420,13 +397,6 @@ Invoke <font face="Consolas">Edksetup.bat</font> from directory <font face="Cons
 </span></p>
 @snapend
 
-
-
-@snap[south-west span-100 ]
-<p style="line-height:30%" align="right"><span style="font-size:0.45em;  " >@color[white](Building <font face="Consolas">BaseTools</font> only needs to be done once but setting up local environment and edksetup.bat needs to be done each new VS prompt session)
-</span></p>
-<br>
-@snapend
 
 
 ---?image=assets/images/binary-strings-black2.jpg
@@ -460,7 +430,10 @@ Edit the file "<font face="Consolas">Conf/target.txt</font>" </span><span style=
 &lpar;change <font face="Consolas">TOOL_CHAIN_TAG</font>&rpar; &nbsp;&nbsp;<font face="Consolas">Notepad Conf/target.txt</font></span></p>
 
 @snap[south-west span-50 ]
-<p style="line-height:40%" align="left" ><span style="font-size:0.45em; font-family:Consolas;"><font color="black"> &nbsp;&nbsp;&nbsp;&nbsp; TARGET_ARCH&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;           = X64<br> &nbsp;&nbsp;&nbsp;&nbsp;. . .<br> &nbsp;&nbsp;&nbsp;&nbsp; TOOL_CHAIN_TAG&nbsp;&nbsp;        = VS2015x86<br><br><br></font></span></p>
+<p style="line-height:40%" align="left" ><span style="font-size:0.45em; font-family:Consolas;"><font color="black"> 
+&nbsp;&nbsp;&nbsp;&nbsp; TARGET_ARCH&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;           = X64
+<br> &nbsp;&nbsp;&nbsp;&nbsp;. . .
+<br> &nbsp;&nbsp;&nbsp;&nbsp; TOOL_CHAIN_TAG&nbsp;&nbsp;        = VS2015x86<br><br><br></font></span></p>
 <br>
 @snapend
 
