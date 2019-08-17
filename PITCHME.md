@@ -429,8 +429,8 @@ Invoke <font face="Consolas">Edksetup.bat </font>
 </span>
 </span></p>
 
-<p style="line-height:50%" align="left" ><span style="font-size:0.7em;" >
-Edit the file Conf/target.txt @size[.7em](&lpar;change Tool_Chain_Tag&rpar;<br>)
+<p style="line-height:50%" align="left" ><span style="font-size:0.7em;" ><br>
+<b>Edit</b> the file Conf/target.txt @size[.7em](&lpar;change TOOL_CHAIN_TAG&rpar;<br>)
 <font face="Consolas">@size[.7em](&nbsp; notepad Conf/target.txt )</font>
 </span></p>
 
@@ -446,7 +446,7 @@ Edit the file Conf/target.txt @size[.7em](&lpar;change Tool_Chain_Tag&rpar;<br>)
 <br>
 <br>
 <p style="line-height:40%" align="left" ><span style="font-size:0.35em; font-family:Consolas;">
-<font color="black"><br>
+<font color="black"><br><br>
 &nbsp;&nbsp;TARGET_ARCH&nbsp;&nbsp;&nbsp;&nbsp;           = X64 <br>
 &nbsp;&nbsp; &nbsp;&nbsp;. &nbsp;&nbsp;. &nbsp;&nbsp;. <br>
 &nbsp;&nbsp;TOOL_CHAIN_TAG &nbsp;       = VS2015x86 <br>
