@@ -444,7 +444,8 @@ Edit the file Conf/target.txt @size[.7em](&lpar;change Tool_Chain_Tag&rpar;<br>)
 <br>
 <br>
 <br>
-<p style="line-height:40%" align="left" ><span style="font-size:0.45em; font-family:Consolas;">
+<br>
+<p style="line-height:40%" align="left" ><span style="font-size:0.35em; font-family:Consolas;">
 <font color="black"><br>
 &nbsp;&nbsp;TARGET_ARCH&nbsp;&nbsp;&nbsp;&nbsp;           = X64 <br>
 &nbsp;&nbsp; &nbsp;&nbsp;. &nbsp;&nbsp;. &nbsp;&nbsp;. <br>
