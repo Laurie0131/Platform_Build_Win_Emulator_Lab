@@ -365,27 +365,28 @@ Note:
 @snap[north-west span-100 ]
 <br>
 <br>
-<br>
-<p style="line-height:70%" align="left" ><span style="font-size:0.7em;" >
+<p style="line-height:60%" align="left" ><span style="font-size:0.7em;" >
 Open VS Command prompt and Cd to work space directory <br>
 <span style="background-color: #000000"><font face="Consolas">
 &nbsp;&nbsp;cd  C:&bsol;&gt;FW\edk2-ws &nbsp;&nbsp;&nbsp;&nbsp; </font></span> <br>
-
+<br>
 Setup the local environment: (see batch file setenv.bat )<br>
 <span style="background-color: #000000"><font face="Consolas">
-@size[.7em](&nbsp;&nbsp;$&gt; set WORKSPACE=%CD% &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <br>)
-@size[.7em](&nbsp;&nbsp;$&gt; set PACKAGES_PATH=%WORKSPACE%\edk2;%WORKSPACE%\edk2-libc  &nbsp;&nbsp;&nbsp;&nbsp;  )</font></span> <br>
-
+@size[.7em](&nbsp;&nbsp;$&gt; set WORKSPACE=%CD% &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <br>)
+@size[.7em](&nbsp;&nbsp;$&gt; set PACKAGES_PATH=%WORKSPACE%\edk2;%WORKSPACE%\edk2-libc  &nbsp;&nbsp;&nbsp;  )</font></span> <br>
+<br>
 Invoke Edksetup.bat from directory <font face="Consolas">C:/FW/edk2-ws/edk2</font> to Build <font face="Consolas">BaseTools </font><br>
 <span style="background-color: #000000"><font face="Consolas">
 @size[.7em](&nbsp;&nbsp;$&gt; cd edk2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>)
 @size[.7em](&nbsp;&nbsp;$&gt; edksetup.bat Rebuild&nbsp;&nbsp;&nbsp;&nbsp;)</font></span> <br>
 </span></p>
 <br>
-<p style="line-height:50%" align="left" ><span style="font-size:0.5em;" >
+@snapend
+
+@snap[south-west span-100 ]
+<p style="line-height:45%" align="left" ><span style="font-size:0.5em;" >
 Building BaseTools only needs to be done once but setting up local environment and edksetup.bat needs to be done each new VS prompt session
 </span></p>
-
 @snapend
 
 
