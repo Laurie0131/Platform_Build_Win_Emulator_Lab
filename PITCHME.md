@@ -265,7 +265,7 @@ Note:
 <br>
 <br>
 <br>
-<p style="line-height:80%" align="left"><span style="font-size:0.80em;  " >1. Extract the Downloaded <font face="Consolas">Lab_Material_FW-master.zip to C:\ </font> </span></p>
+<p style="line-height:70%" align="left"><span style="font-size:0.75em;  " >1. Extract the Downloaded <font face="Consolas">Lab_Material_FW-master.zip to C:\ </font> </span></p>
 <br>
 @snapend
 
@@ -283,8 +283,8 @@ Extract the Downloaded Lab_Material_FW.zip to Home (this will create a directory
 <br>
 <p style="line-height:70%" align="left" ><span style="font-size:0.7em;" >2. Open a VS command prompt <br> 3. 
 Create a working space directory "FW" <br>
-<span style="background-color: #000000"><font face="Consolas">&nbsp;&nbsp; C:&bsol;&gt; mkdir FW &nbsp&nbsp; </font></span>
-<br>4.From the downloaded Lab_Material_FW folder, <b>copy</b> and <b>paste</b> folder <font face="Consolas">"..\edk2-ws" to "C:/FW"</font>
+<span style="background-color: #000000"><font face="Consolas">@size[.7em](&nbsp;&nbsp; C:&bsol;&gt; mkdir FW &nbsp;&nbsp;&nbsp;&nbsp;) </font></span>
+<br>4. From the downloaded Lab_Material_FW folder, <b>copy</b> and <b>paste</b> folder <font face="Consolas">"..\edk2-ws" to "C:/FW"</font>
 </span></p>
 
 @snapend
@@ -307,9 +307,10 @@ Note:
 
 @snap[north-west span-70 ]
 <br>
-<p style="line-height:70%" align="left" ><span style="font-size:0.7em;" >5. 
+<br>
+<p style="line-height:70%" align="left" ><span style="font-size:0.7em;" >5.&nbsp;
 Copy<font face="Consolas"> Nasm </font> directory to <font face="Consolas">C:&bsol;</font><br>
-@size[.7em](&lpar(creating <font face="Consolas">C:&bsol;Nasm</font> directory&rpar;)
+@size[.8em](&lpar;creating <font face="Consolas">C:&bsol;Nasm</font> directory&rpar;)
 </span></p>
 
 @snapend
@@ -359,25 +360,30 @@ Note:
 ---
 @title[Build  Edk2 -build BaseTools]
 <p align="right"><span class="gold" >@size[1.1em](<b>Build EDK II  </b>)</span><br>
-<span style="font-size:0.75em;" > – build <font face="Consolas">BaseTools</font>)</span></p>
+<span style="font-size:0.75em;" > – build <font face="Consolas">BaseTools</font></span></p>
 
 @snap[north-west span-100 ]
 <br>
+<br>
+<br>
 <p style="line-height:70%" align="left" ><span style="font-size:0.7em;" >
-Open VS Command prompt & Cd to work space directory <br>
+Open VS Command prompt and Cd to work space directory <br>
+<span style="background-color: #000000"><font face="Consolas">
+&nbsp;&nbsp;cd  C:&bsol;&gt;FW\edk2-ws &nbsp;&nbsp;&nbsp;&nbsp; </font></span> <br>
 
+Setup the local environment: (see batch file setenv.bat )<br>
 <span style="background-color: #000000"><font face="Consolas">
-&nbsp;&nbsp;cd  C:&bsol;&gt;FW\edk2-ws &nbsp&nbsp;&nbsp&nbsp; </font></span> <br>
-Setup the local environment: (see batch file setenv.bat )
-<span style="background-color: #000000"><font face="Consolas">
-@size[.7em](&nbsp;&nbsp;$&gt; set WORKSPACE=%CD%  &nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;)<Br>
-@size[.7em](&nbsp;&nbsp;$&gt; set PACKAGES_PATH=%WORKSPACE%\edk2;%WORKSPACE%\edk2-libc  &nbsp&nbsp;&nbsp&nbsp;  )</font></span> <br>
+@size[.7em](&nbsp;&nbsp;$&gt; set WORKSPACE=%CD% &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <br>)
+@size[.7em](&nbsp;&nbsp;$&gt; set PACKAGES_PATH=%WORKSPACE%\edk2;%WORKSPACE%\edk2-libc  &nbsp;&nbsp;&nbsp;&nbsp;  )</font></span> <br>
+
 Invoke Edksetup.bat from directory <font face="Consolas">C:/FW/edk2-ws/edk2</font> to Build <font face="Consolas">BaseTools </font><br>
 <span style="background-color: #000000"><font face="Consolas">
-@size[.7em](&nbsp;&nbsp;$&gt; cd edk2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;)<br>
+@size[.7em](&nbsp;&nbsp;$&gt; cd edk2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>)
 @size[.7em](&nbsp;&nbsp;$&gt; edksetup.bat Rebuild&nbsp;&nbsp;&nbsp;&nbsp;)</font></span> <br>
+</span></p>
 <br>
-@size[.7em](Building BaseTools only needs to be done once but setting up local environment and edksetup.bat needs to be done each new VS prompt session)
+<p style="line-height:50%" align="left" ><span style="font-size:0.5em;" >
+Building BaseTools only needs to be done once but setting up local environment and edksetup.bat needs to be done each new VS prompt session
 </span></p>
 
 @snapend
