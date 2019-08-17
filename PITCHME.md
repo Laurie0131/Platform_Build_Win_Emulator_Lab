@@ -397,8 +397,6 @@ Building BaseTools only needs to be done once but setting up local environment a
 <br>
 <br>
 <br>
-<br>
-<br>
 <p style="line-height:40%" align="left"><span style="font-size:02.80em;  " ><br><br>
 @color[yellow](&#8678;)
 </span></p>
@@ -432,24 +430,51 @@ Invoke <font face="Consolas">Edksetup.bat </font>
 </span>
 </span></p>
 
-<p style="line-height:60%" align="left" ><span style="font-size:0.7em;" >
+<p style="line-height:50%" align="left" ><span style="font-size:0.7em;" >
 Edit the file Conf/target.txt @size[.7em](&lpar;change Tool_Chain_Tag&rpar;<br>)
 <font face="Consolas">@size[.7em](&nbsp; notepad Conf/target.txt )</font>
-<br>
-<br>
-<br>
-@size[.7em](<b>Save</b> and <b>Exit</b>)<br>
 </span></p>
 
 @snapend
 
+@snap[north-west span-60 ]
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<p style="line-height:50%" align="left" ><span style="font-size:0.5em; font-family:Consolas;">
+<font color="black">
+&nbsp;&nbsp;TARGET_ARCH&nbsp;&nbsp;&nbsp;&nbsp;           = X64 <br>
+&nbsp;&nbsp; &nbsp;&nbsp;. &nbsp;&nbsp;. &nbsp;&nbsp;. <br>
+&nbsp;&nbsp;TOOL_CHAIN_TAG &nbsp;       = VS2015x86 <br>
+</font>
+</span></p>
+@snapend
+
+
 @snap[south-west span-100 ]
+<p style="line-height:50%" align="left" ><span style="font-size:0.7em;" >
+@size[.8em](<b>Save</b> and <b>Exit</b>)<br>
+<b>Build Emulator</b>
+</span></p>
 <p style="line-height:50%" align="left" ><span style="font-size:0.5em; font-family:Consolas;">
 <span style="background-color: #000000">
 &nbsp;&nbsp;$&gt; build –D ADD_SHELL_STRING –D WIN_SEC_BUILD -a X64 &nbsp;&nbsp;   <br>
 </span>
 </span></p>
 @snapend
+
+
+@snap[south-east span-40 fragment ]
+<p style="line-height:10%" align="left"><span style="font-size:02.80em;  " ><br><br>
+@color[yellow](&#8678;)
+<br>&nbsp;
+</span></p>
+@snapend
+
+
 
 ---?image=/assets/images/slides/Slide20.JPG
 @title[Build Edk2 -update target.txt 02 DELETE ME]
