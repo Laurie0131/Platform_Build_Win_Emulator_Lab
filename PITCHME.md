@@ -444,11 +444,8 @@ Edit the file Conf/target.txt @size[.7em](&lpar;change Tool_Chain_Tag&rpar;<br>)
 <br>
 <br>
 <br>
-<br>
-<br>
-<br>
-<p style="line-height:50%" align="left" ><span style="font-size:0.5em; font-family:Consolas;">
-<font color="black">
+<p style="line-height:40%" align="left" ><span style="font-size:0.45em; font-family:Consolas;">
+<font color="black"><br>
 &nbsp;&nbsp;TARGET_ARCH&nbsp;&nbsp;&nbsp;&nbsp;           = X64 <br>
 &nbsp;&nbsp; &nbsp;&nbsp;. &nbsp;&nbsp;. &nbsp;&nbsp;. <br>
 &nbsp;&nbsp;TOOL_CHAIN_TAG &nbsp;       = VS2015x86 <br>
@@ -472,10 +469,9 @@ Edit the file Conf/target.txt @size[.7em](&lpar;change Tool_Chain_Tag&rpar;<br>)
 @snapend
 
 
-@snap[south-east span-40 fragment ]
+@snap[south-east span-30 fragment ]
 <p style="line-height:10%" align="left"><span style="font-size:02.80em;  " ><br><br>
 @color[yellow](&#8678;)
-<br>&nbsp;
 </span></p>
 @snapend
 
