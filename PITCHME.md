@@ -281,10 +281,10 @@ Extract the Downloaded Lab_Material_FW.zip to Home (this will create a directory
 
 @snap[north-west span-100 ]
 <br>
-<p style="line-height:70%" align="left" ><span style="font-size:0.7em;" >2. Open a VS command prompt <br> 3. 
+<p style="line-height:70%" align="left" ><span style="font-size:0.7em;" >2. Open a VS command prompt <br><br> 3. 
 Create a working space directory "FW" <br>
 <span style="background-color: #000000"><font face="Consolas">@size[.7em](&nbsp;&nbsp; C:&bsol;&gt; mkdir FW &nbsp;&nbsp;&nbsp;&nbsp;) </font></span>
-<br>4. From the downloaded Lab_Material_FW folder, <b>copy</b> and <b>paste</b> folder <font face="Consolas">"..\edk2-ws" to "C:/FW"</font>
+<br><br>4. From the downloaded Lab_Material_FW folder, <b>copy</b> and <b>paste</b> folder <font face="Consolas">"..\edk2-ws" to "C:/FW"</font>
 </span></p>
 
 @snapend
@@ -368,12 +368,12 @@ Note:
 <p style="line-height:60%" align="left" ><span style="font-size:0.7em;" >
 Open VS Command prompt and Cd to work space directory <br>
 <span style="background-color: #000000"><font face="Consolas">
-&nbsp;&nbsp;cd  C:&bsol;&gt;FW\edk2-ws &nbsp;&nbsp;&nbsp;&nbsp; </font></span> <br>
+@size[.7em](&nbsp;&nbsp;cd  C:&bsol;&gt;FW\edk2-ws &nbsp;&nbsp;&nbsp;&nbsp;) </font></span> <br>
 <br>
 Setup the local environment: (see batch file setenv.bat )<br>
 <span style="background-color: #000000"><font face="Consolas">
 @size[.7em](&nbsp;&nbsp;$&gt; set WORKSPACE=%CD% &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <br>)
-@size[.7em](&nbsp;&nbsp;$&gt; set PACKAGES_PATH=%WORKSPACE%\edk2;%WORKSPACE%\edk2-libc  &nbsp;&nbsp;&nbsp;  )</font></span> <br>
+@size[.7em](&nbsp;&nbsp;$&gt; set PACKAGES_PATH=%WORKSPACE%\edk2;%WORKSPACE%\edk2-libc  &nbsp;&nbsp;  )</font></span> <br>
 <br>
 Invoke Edksetup.bat from directory <font face="Consolas">C:/FW/edk2-ws/edk2</font> to Build <font face="Consolas">BaseTools </font><br>
 <span style="background-color: #000000"><font face="Consolas">
@@ -415,6 +415,44 @@ Building BaseTools only needs to be done once but setting up local environment a
 
 ---?image=/assets/images/slides/Slide20.JPG
 @title[Build Edk2 -update target.txt]
+<p align="right"><span class="gold" >@size[1.1em](<b>Build EDK II  </b>)</span><br>
+<span style="font-size:0.75em;" > – Update <font face="Consolas">Target.txt</font></span></p>
+
+@snap[north-west span-60 ]
+<br>
+<br>
+<p style="line-height:60%" align="left" ><span style="font-size:0.7em;" >
+@size[1.1em](<b>EmulatorPkg</b>) - Build with edk2  <br>
+Invoke <font face="Consolas">Edksetup.bat </font>
+</span></p>
+<p style="line-height:50%" align="left" ><span style="font-size:0.5em; font-family:Consolas;">
+<span style="background-color: #000000">
+&nbsp;&nbsp;$&gt; cd C:\FW\edk2-ws\edk2 &nbsp;&nbsp;   <br>
+&nbsp;&nbsp;$&gt; edksetup.bat &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <br>
+</span>
+</span></p>
+
+<p style="line-height:60%" align="left" ><span style="font-size:0.7em;" >
+Edit the file Conf/target.txt @size[.7em](&lpar;change Tool_Chain_Tag&rpar;<br>)
+<font face="Consolas">@size[.7em](&nbsp; notepad Conf/target.txt )</font>
+<br>
+<br>
+<br>
+@size[.7em](<b>Save</b> and <b>Exit</b>)<br>
+</span></p>
+
+@snapend
+
+@snap[south-west span-100 ]
+<p style="line-height:50%" align="left" ><span style="font-size:0.5em; font-family:Consolas;">
+<span style="background-color: #000000">
+&nbsp;&nbsp;$&gt; build –D ADD_SHELL_STRING –D WIN_SEC_BUILD -a X64 &nbsp;&nbsp;   <br>
+</span>
+</span></p>
+@snapend
+
+---?image=/assets/images/slides/Slide20.JPG
+@title[Build Edk2 -update target.txt 02 DELETE ME]
 ### <p align="right"><span class="gold" >Build EDK II </span></span></p>
 
 
