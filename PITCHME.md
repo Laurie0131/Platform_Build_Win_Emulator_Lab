@@ -519,10 +519,10 @@ Note:
 
 
 @snap[south-east span-40  ]
-<p style="line-height:80% align="right"><span style="font-size:0.8em" >
+<p style="line-height:50%" align="right"><span style="font-size:0.8em" >
 Finished build
 <br>
-<Br>
+<br>
 </span></p>
 @snapend
 
@@ -536,8 +536,7 @@ Note:
 
 @snap[north-west span-45 ]
 <br>
-<br>
-<p style="line-height:650%" align="left"><span style="font-size:0.75em" >From the command prompt<br><br></span>
+<p style="line-height:65%" align="left"><span style="font-size:0.75em" >From the command prompt<br><br></span>
 &nbsp;&nbsp;<font face="Consolas"><span style="background-color: #000000; font-size:0.55em; ">
 &nbsp;&nbsp;$&gt;  RunEmulator.bat &nbsp;&nbsp;</span></font>
 <br>
