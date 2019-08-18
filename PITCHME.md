@@ -536,9 +536,11 @@ Note:
 
 @snap[north-west span-45 ]
 <br>
+<br>
 <p style="line-height:65%" align="left"><span style="font-size:0.75em" >From the command prompt<br><br></span>
 &nbsp;&nbsp;<font face="Consolas"><span style="background-color: #000000; font-size:0.55em; ">
 &nbsp;&nbsp;$&gt;  RunEmulator.bat &nbsp;&nbsp;</span></font>
+<br>
 <br>
 <span style="font-size:0.75em" >
 OR<br>
@@ -555,9 +557,10 @@ Note:
 
 ---?image=/assets/images/slides/Slide24.JPG
 @title[Build Edk2 -exit emulator]
-<p align="right"><span class="gold" >@size[1.1em](<b>Invoke Emulation  </b>)</span><span style="font-size:0.75em;" ></span></p>
+<p align="right"><span class="gold" >@size[1.1em](<b>Emulator at Shell Prompt  </b>)</span><span style="font-size:0.75em;" ></span></p>
 
 @snap[north-west span-45 ]
+<br>
 <br>
 <br>
 <p style="line-height:80%" align="left"><span style="font-size:0.8em" >Type: "Reset" to exit<br><br>
