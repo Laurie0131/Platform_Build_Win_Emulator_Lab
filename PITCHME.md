@@ -526,6 +526,7 @@ Finished build
 <br>
 <br>
 <br>
+<br>
 </span></p>
 @snapend
 
