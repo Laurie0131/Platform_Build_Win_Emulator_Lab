@@ -478,56 +478,9 @@ Invoke <font face="Consolas">Edksetup.bat </font>
 
 
 
----?image=/assets/images/slides/Slide20.JPG
-@title[Build Edk2 -update target.txt 02 DELETE ME]
-### <p align="right"><span class="gold" >Build EDK II </span></span></p>
-
-
-@snap[north-east span-50 ]
-<br>
-<p align="right"><span style="font-size:0.8em" ><font color="#e49436">–Update Target.txt</font></span></p>
-@snapend
-
-<p style="line-height:70%" align="left"><span style="font-size:0.750em;">@size[1.0em](EmulatorPkg) - Build with edk2
-<br>Invoke <font face="Consolas">Edksetup.bat</font> 
-</span></p>
-<pre>
-```
-   $> cd C:\FW\edk2-ws\edk2
-   $> edksetup.bat 
-```
-</pre>
-<p style="line-height:60%" align="left"><span style="font-size:0.75em;  " >
-Edit the file "<font face="Consolas">Conf/target.txt</font>" </span><span style="font-size:0.50em;  " > <br>
-&lpar;change <font face="Consolas">TOOL_CHAIN_TAG</font>&rpar; &nbsp;&nbsp;<font face="Consolas">Notepad Conf/target.txt</font></span></p>
-
-@snap[south-west span-50 ]
-<p style="line-height:40%" align="left" ><span style="font-size:0.45em; font-family:Consolas;"><font color="black"> 
-&nbsp;&nbsp;&nbsp;&nbsp; TARGET_ARCH&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;           = X64
-<br> &nbsp;&nbsp;&nbsp;&nbsp;. . .
-<br> &nbsp;&nbsp;&nbsp;&nbsp; TOOL_CHAIN_TAG&nbsp;&nbsp;        = VS2015x86<br><br><br></font></span></p>
-<br>
-@snapend
-
-@snap[south-west span-100 ]
-<p style="line-height:40%" align="left"><span style="font-size:0.75em;  " >
-Save and Exit <br>
-<b>Build EmulatorPkg</b>
-<font face="Consolas">
-@size[.4em](&nbsp; $ &gt; build –D ADD_SHELL_STRING –D WIN_SEC_BUILD -a X64)
-</font>
-</span></p>
-@snapend
-
-
-@snap[south-east span-40 fragment ]
-<p style="line-height:10%" align="left"><span style="font-size:02.80em;  " ><br><br>
-@color[yellow](&#8678;)
-<br>&nbsp;
-</span></p>
-@snapend
 
 Note:
+
 -  Cd C:/fw/edk2-ws/edk2
 
 - invoke edksetup.bat 
@@ -542,15 +495,17 @@ Note:
 
 ---
 @title[Possible Build Errors]
-### <p align="right"><span class="gold" >Possible Build Errors</span><br></span></p>
+<p align="right"><span class="gold" >@size[1.1em](<b>Possible Build Errors </b>)</span><span style="font-size:0.75em;" ></span></p>
+
 <p style="line-height:80%"><span style="font-size:0.8em" >1. If you get a BUILD Error:  Error “<font face="Consolas">C:/Program </font>“ not found</span></p>
 <ul style="line-height:0.8;">
   <li><span style="font-size:0.7em" >First check that you have opened Visual Studio and installed the “C++”   </span> </li>
   <li><span style="font-size:0.7em" >Open Visual Studio and create a “C++” project </span> </li>
   <li><span style="font-size:0.7em" > (This will take some time to install)</span> </li>
 </ul>  
-<p style="line-height:80%"><span style="font-size:0.8em" >2. If you get a BUILD Error: Check if  RC.Exe compiler not found is the error -<a href="https://gitpitch.com/tianocore-training/Platform_Build_Win_Lab/master#/56"> here</a> </span> </p>
-<p style="line-height:80%"><span style="font-size:0.8em" >3. If you get a BUILD Error: <font face="Consolas">fatal error C1041: cannot open program database</font> … Check <a href="https://gitpitch.com/tianocore-training/Platform_Build_Win_Lab/master#/57"> here</a>  </span> </p>
+<p style="line-height:80%"><span style="font-size:0.8em" >2. If you get a BUILD Error: Check if  RC.Exe compiler not found is the error -<a href="https://gitpitch.com/tianocore-training/Platform_Build_Win_Emulator_Lab/master#/31" > here</a> </span> </p>
+<p style="line-height:80%"><span style="font-size:0.8em" >3. If you get a BUILD Error: <font face="Consolas">fatal error C1041: cannot open program database</font> … Check 
+<a href="https://gitpitch.com/tianocore-training/Platform_Build_Win_Emulator_Lab/master#/32"> here</a>  </span> </p>
 
 
 Note:
@@ -559,15 +514,15 @@ Note:
 
 ---?image=/assets/images/slides/Slide22.JPG
 @title[Build Edk2 -build inside VS Prompt]
-### <p align="right"><span class="gold" >Build EDK II </span></span></p>
-@snap[north-east span-50 ]
-<br>
-<p align="right"><span style="font-size:0.8em" ><font color="#e49436">–Inside VS Prompt</font></span></p>
-@snapend
+<p align="right"><span class="gold" >@size[1.1em](<b>Build EDK II  </b>)</span><br>
+<span style="font-size:0.75em;" > – Inside VS Prompt</span></p>
+
 
 @snap[south-east span-40  ]
-<p style="line-height:80%"><span style="font-size:0.8em" >
+<p style="line-height:80% align="right"><span style="font-size:0.8em" >
 Finished build
+<br>
+<Br>
 </span></p>
 @snapend
 
@@ -577,21 +532,22 @@ Note:
 
 ---?image=/assets/images/slides/Slide23.JPG
 @title[Build Edk2 -invoke emulator]
-### <p align="right"><span class="gold" >Invoke Emulation</span></p>
+<p align="right"><span class="gold" >@size[1.1em](<b>Invoke Emulation  </b>)</span><span style="font-size:0.75em;" ></span></p>
+
 @snap[north-west span-45 ]
 <br>
 <br>
-<p style="line-height:80%" align="left"><span style="font-size:0.8em" >From the command prompt<br><br></span>
+<p style="line-height:650%" align="left"><span style="font-size:0.75em" >From the command prompt<br><br></span>
 &nbsp;&nbsp;<font face="Consolas"><span style="background-color: #000000; font-size:0.55em; ">
 &nbsp;&nbsp;$&gt;  RunEmulator.bat &nbsp;&nbsp;</span></font>
 <br>
 <span style="font-size:0.75em" >
 OR<br>
 run <font face="Consolas">@color[yellow](WinHost.exe) </font> from:<br>&nbsp;&nbsp;
-<font face="Consolas">Build/ . . ./X64 directory</font>
+<font face="Consolas">@size[.7em](Build/ . . ./X64 directory)</font>
 </span></p>
 <br>
-<p style="line-height:80%" align="left"><span style="font-size:0.6em" > Notice 2 "GOP Window n" opened </span></p>
+<p style="line-height:50%" align="left"><span style="font-size:0.5em" > Notice 2 "GOP Window n" opened </span></p>
 @snapend
 
 
@@ -600,13 +556,14 @@ Note:
 
 ---?image=/assets/images/slides/Slide24.JPG
 @title[Build Edk2 -exit emulator]
-### <p align="right"><span class="gold" >Emulatior at Shell Prompt</span></p>
+<p align="right"><span class="gold" >@size[1.1em](<b>Invoke Emulation  </b>)</span><span style="font-size:0.75em;" ></span></p>
+
 @snap[north-west span-45 ]
 <br>
 <br>
 <p style="line-height:80%" align="left"><span style="font-size:0.8em" >Type: "Reset" to exit<br><br>
 </span></p>
-@spanend
+@snapend
 
 Note:
 
