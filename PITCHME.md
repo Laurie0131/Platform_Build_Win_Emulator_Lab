@@ -464,7 +464,7 @@ Invoke <font face="Consolas">Edksetup.bat </font>
 </span></p>
 <p style="line-height:50%" align="left" ><span style="font-size:0.5em; font-family:Consolas;">
 <span style="background-color: #000000">
-&nbsp;&nbsp;$&gt; build –D ADD_SHELL_STRING –D WIN_SEC_BUILD -a X64 &nbsp;&nbsp;   <br>
+&nbsp;&nbsp;$&gt; build -D ADD_SHELL_STRING -a X64 &nbsp;&nbsp;   <br>
 </span>
 </span></p>
 @snapend
@@ -490,7 +490,7 @@ Note:
   -	. . .
   -  TOOL_CHAIN_TAG        = VS2015x86
 
--  build –D ADD_SHELL_STRING –D WIN_SEC_BUILD -a X64
+-  build -D ADD_SHELL_STRING  -a X64
 
 
 ---
