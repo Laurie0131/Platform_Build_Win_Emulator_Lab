@@ -711,6 +711,18 @@ DEFINE WINSDK81x86_BIN    = c:\Program Files (x86)\Windows Kits\8.1\bin\x64
 
 
 Note:
+## Copy paste for RC Error
+```
+# Microsoft Visual Studio 2013 Professional Edition
+DEFINE WINSDK8_BIN       = c:\Program Files\Windows Kits\8.1\bin\x86\
+DEFINE WINSDK8x86_BIN    = c:\Program Files (x86)\Windows Kits\8.1\bin\x64
+ 
+# Microsoft Visual Studio 2015 Professional Edition
+DEFINE WINSDK81_BIN       = c:\Program Files\Windows Kits\8.1\bin\x86\
+DEFINE WINSDK81x86_BIN    = c:\Program Files (x86)\Windows Kits\8.1\bin\x64
+
+```
+
 ---
 @title[Build Error- C1041 ]
 <p align="right"><span class="gold" ><b>Build Error: fatal error C1041: </b></span></p>
