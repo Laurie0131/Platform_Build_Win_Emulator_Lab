@@ -709,7 +709,6 @@ DEFINE WINSDK81x86_BIN    = c:\Program Files (x86)\Windows Kits\8.1\bin\x64
 
 ```
 
-
 Note:
 ## Copy paste for RC Error
 ```
@@ -721,6 +720,16 @@ DEFINE WINSDK8x86_BIN    = c:\Program Files (x86)\Windows Kits\8.1\bin\x64
 DEFINE WINSDK81_BIN       = c:\Program Files\Windows Kits\8.1\bin\x86\
 DEFINE WINSDK81x86_BIN    = c:\Program Files (x86)\Windows Kits\8.1\bin\x64
 
+```
+
+### RC FIX for VS 2017 at command prompt type > Set
+```
+ See what the value of WINSDK10_PREFIX is.  This is probably the problem
+ Search your directory "C:\Program Files (x86)\" for the file rc.exe
+ the one you want will be in  C:\Program Files (x86)\Windows Kits\10\bin\x86
+ see below for the define: 
+  From : DEFINE WINSDK10_BIN       = ENV(WINSDK10_PREFIX)DEF(VS2017_HOST)
+  to : DEFINE WINSDK10_BIN       = C:\Program Files (x86)\Windows Kits\10\bin\x86
 ```
 
 ---
