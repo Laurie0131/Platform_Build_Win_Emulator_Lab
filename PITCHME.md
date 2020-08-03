@@ -198,8 +198,9 @@ Note:
 <br>
 <br>
 <br>
-<br>
 ![VS_logo](/assets/images/Brand_Visual_Studio_Win_2019.png)
+![Python_logo](/assets/images/python-logo@2x.png)
+![git_logo](/assets/images/git_logo.png)
 @snapend
 
 Note:
