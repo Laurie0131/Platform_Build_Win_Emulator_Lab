@@ -308,10 +308,9 @@ Extract the Downloaded Lab_Material_FW.zip to Home (this will create a directory
 
 @snap[north-west span-100 ]
 <br>
-<p style="line-height:70%" align="left" ><span style="font-size:0.7em;" >2. Open a VS command prompt <br><br> 3. 
-Create a working space directory "FW" <br>
-<span style="background-color: #000000"><font face="Consolas">@size[.7em](&nbsp;&nbsp; C:&bsol;&gt; mkdir FW &nbsp;&nbsp;&nbsp;&nbsp;) </font></span>
-<br><br>From the downloaded Lab_Material_FW folder, <b>copy</b> and <b>paste</b> folder <font face="Consolas">"..\edk2-ws" to "C:/FW"</font>
+<p style="line-height:70%" align="left" ><span style="font-size:0.7em;" >From the downloaded Lab_Material_FW folder, 
+<b>copy</b> and  <b>paste</b> folder "<font face="Consolas">..\edk2-ws</font>" to "<font face="Consolas">C:/FW</font>" <br>
+    &nbsp;<i>Note</i>: Overwrite existing files and directories
 </span></p>
 
 @snapend
@@ -319,10 +318,6 @@ Create a working space directory "FW" <br>
 
 
 Note:
-- Open a VS Command prompt   
-- Create a working  space directory “FW”
-  -   C:\> mkdir FW
-
 - From the downloaded Lab_Material_FW folder, copy and 
    -  paste folder “..\edk2-ws” to C:/FW
 
@@ -335,7 +330,7 @@ Note:
 @snap[north-west span-70 ]
 <br>
 <br>
-<p style="line-height:70%" align="left" ><span style="font-size:0.7em;" >&nbsp;
+<p style="line-height:70%" align="left" ><span style="font-size:0.7em;" >
 Copy<font face="Consolas"> Nasm </font> directory to <font face="Consolas">C:&bsol;</font><br>
 @size[.8em](&lpar;creating <font face="Consolas">C:&bsol;Nasm</font> directory&rpar;)
 </span></p>
@@ -398,7 +393,7 @@ Building BaseTools only needs to be done once but setting up local environment a
 ---?image=assets/images/binary-strings-black2.jpg
 @title[Stuart CI Build  sub Section]
 <br><br><br><br><br>
-## <span class="gold"  >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Stuart CI Build EmulatorPkg </span>
+### <span class="gold"  >Stuart CI Build EmulatorPkg </span>
 <span style="font-size:0.9em" > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>
 
 @snap[east span-20 ]
