@@ -199,9 +199,26 @@ Note:
 <br>
 <br>
 ![VS_logo](/assets/images/Brand_Visual_Studio_Win_2019.png)
-![Python_logo](/assets/images/python-logo@2x.png)
+<br>
+<br>
+<br>
+<br>
+<br>
 ![git_logo](/assets/images/git_logo.png)
 @snapend
+
+
+@snap[north-east span-15 ]
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+![Python_logo](/assets/images/python-logo@2x.png)
+@snapend
+
 
 Note:
 
