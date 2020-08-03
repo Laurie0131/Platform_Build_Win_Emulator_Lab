@@ -193,7 +193,13 @@ Note:
 <li><span style="font-size:0.75em"> NASM  for Win64 :<a href="https://www.nasm.us/pub/nasm/releasebuilds/2.12.02/win64/"> Link </a> </span></li>
 </ul>
 
-
+@snap[north-east span-10 ]
+<br>
+<br>
+<br>
+<br>
+![VS_logo](/assets/images/Brand_Visual_Studio_Win_2019.png)
+@snapend
 
 Note:
 
