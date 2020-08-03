@@ -221,7 +221,7 @@ Note:
 Open Windows Command Prompt <br><br>
 Make new directory for Workspace: 
 </span></p>
-<p style="line-height:45%" align="left" ><span style="font-size:0.54em; font-family:Consolas;" ><br>&nbsp;&nbsp;
+<p style="line-height:45%" align="left" ><span style="font-size:0.54em; font-family:Consolas;" ><br><br><br>&nbsp;&nbsp;
  $ cd / <br>&nbsp;&nbsp;
  $ Mkdir FW<br>&nbsp;&nbsp;
  $ cd FW<br>&nbsp;&nbsp;
