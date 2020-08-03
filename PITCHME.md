@@ -184,13 +184,13 @@ Note:
 <li><span style="font-size:0.7em">Windows 10: &nbsp;&nbsp; @fa[windows gp-bullet-cyan] </span></li>
 <ul style="list-style-type:disc; line-height:0.7;">
   <li><span style="font-size:0.65em">Continuous Integration (CI) - Stuart CI Build with  Visual Studio VS2017 or VS2019  </span></li>
-  <li><span style="font-size:0.65em">Non Stuart CI - Visual Studio VS2015, VS2017 or VS2019  </span></li>
-  <li><span style="font-size:0.65em">Windows SDK (for rc) & Windows WDK (for Capsules)  </span></li>
+  <li><span style="font-size:0.65em">Non-Stuart CI - Visual Studio VS2015, VS2017 or VS2019  </span></li>
+  <li><span style="font-size:0.65em">Windows SDK (for rc) & Windows WDK (for Capsules) </span></li>
 </ul>
 
-<li><span style="font-size:0.75em"> Python 3.7.x or greater and /Scripts directories on Path: <a href="https://www.python.org/">Link</a> to download  </span></li>
-<li><span style="font-size:0.75em">Git for Windows on Path : <a href="http://git-scm.com/download/win">Link</a>  </span></li>
-<li><span style="font-size:0.75em"> NASM  for Win64 :<a href="https://www.nasm.us/pub/nasm/releasebuilds/2.12.02/win64/"> Link </a> </span></li>
+<li><span style="font-size:0.75em">Python 3.7.x or greater and /Scripts directories on Path: <a href="https://www.python.org/">Link</a> to download  </span></li>
+<li><span style="font-size:0.75em">Git for Windows on Path : <a href="http://git-scm.com/download/win">Link</a></span></li>
+<li><span style="font-size:0.75em">NASM for Win64 :<a href="https://www.nasm.us/pub/nasm/releasebuilds/2.12.02/win64/">Link</a> </span></li>
 </ul>
 
 @snap[north-east span-5 ]
