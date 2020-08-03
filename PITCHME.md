@@ -457,15 +457,17 @@ Note:
 <span style="font-size:0.75em;" ></span></p>
 
 
-@snap[south-east span-40  ]
+@snap[north-east span-40  ]
 <p style="line-height:50%" align="right"><span style="font-size:0.8em" >
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
 Finished build
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
 </span></p>
 @snapend
 
@@ -572,9 +574,9 @@ Note:
   <li><span style="font-size:0.7em" >Open Visual Studio and create a “C++” project </span> </li>
   <li><span style="font-size:0.7em" > (This will take some time to install)</span> </li>
 </ul>  
-<p style="line-height:80%"><span style="font-size:0.8em" >2. If you get a BUILD Error: Check if  RC.Exe compiler not found is the error -<a href="https://gitpitch.com/tianocore-training/Platform_Build_Win_Emulator_Lab/master#/31" > here</a> </span> </p>
+<p style="line-height:80%"><span style="font-size:0.8em" >2. If you get a BUILD Error: Check if  RC.Exe compiler not found is the error -<a href="https://gitpitch.com/tianocore-training/Platform_Build_Win_Emulator_Lab/master#/36" > here</a> </span> </p>
 <p style="line-height:80%"><span style="font-size:0.8em" >3. If you get a BUILD Error: <font face="Consolas">fatal error C1041: cannot open program database</font> … Check 
-<a href="https://gitpitch.com/tianocore-training/Platform_Build_Win_Emulator_Lab/master#/32"> here</a>  </span> </p>
+<a href="https://gitpitch.com/tianocore-training/Platform_Build_Win_Emulator_Lab/master#/38"> here</a>  </span> </p>
 
 
 Note:
@@ -590,6 +592,9 @@ Note:
 @snap[south-east span-40  ]
 <p style="line-height:50%" align="right"><span style="font-size:0.8em" >
 Finished build
+<br>
+<br>
+<br>
 <br>
 <br>
 <br>
@@ -769,11 +774,11 @@ Note:
 @title[Build Error- RC.exe 02]
 <p align="right"><span class="gold" ><b>Build Error- RC.exe Cont...</b></span></p>
 
-<span style="font-size:0.9em" >Edit `Conf/tools_def.txt` </span><br>
-<p style="line-height:90%"><span style="font-size:0.9em" >Search for your installation of Visual Studio (2013 or 2015)</span></p>
+<span style="font-size:0.9em" ><b>Edit</b> `Conf/tools_def.txt` </span><br>
+<p style="line-height:90%"><span style="font-size:0.9em" >Search for your installation of Visual Studio (2013, 2015 or 2017)</span></p>
 <p style="line-height:90%"><span style="font-size:0.9em" >Update according to the path for where the RC.EXE is found </span></p>
 
-```
+```bash
 # Microsoft Visual Studio 2013 Professional Edition
 DEFINE WINSDK8_BIN       = c:\Program Files\Windows Kits\8.1\bin\x86\
 DEFINE WINSDK8x86_BIN    = c:\Program Files (x86)\Windows Kits\8.1\bin\x64
@@ -782,11 +787,18 @@ DEFINE WINSDK8x86_BIN    = c:\Program Files (x86)\Windows Kits\8.1\bin\x64
 DEFINE WINSDK81_BIN       = c:\Program Files\Windows Kits\8.1\bin\x86\
 DEFINE WINSDK81x86_BIN    = c:\Program Files (x86)\Windows Kits\8.1\bin\x64
 
+# Microsoft Visual Studio 2017 Professional Edition
+DEFINE WINSDK10_BIN       = C:\Program Files (x86)\Windows Kits\10\bin\x86
 ```
+
+<p style="line-height:90%"><span style="font-size:0.9em" >Copy and Paste RC error to `Tools_def.txt`
+<a href="https://github.com/tianocore-training/Platform_Build_Win_Emulator_Lab/blob/master/PITCHME.md#copy-paste-for-rc-error">link</a>
+</span></p>
+
 
 Note:
 ## Copy paste for RC Error
-```
+```bash
 # Microsoft Visual Studio 2013 Professional Edition
 DEFINE WINSDK8_BIN       = c:\Program Files\Windows Kits\8.1\bin\x86\
 DEFINE WINSDK8x86_BIN    = c:\Program Files (x86)\Windows Kits\8.1\bin\x64
