@@ -591,7 +591,7 @@ Note:
 
 @snap[south-east span-40  ]
 <p style="line-height:50%" align="right"><span style="font-size:0.8em" >
-Finished build
+Finished<br>build
 <br>
 <br>
 <br>
