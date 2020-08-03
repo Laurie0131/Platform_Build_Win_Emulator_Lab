@@ -193,7 +193,8 @@ Note:
 <li><span style="font-size:0.75em"> NASM  for Win64 :<a href="https://www.nasm.us/pub/nasm/releasebuilds/2.12.02/win64/"> Link </a> </span></li>
 </ul>
 
-@snap[north-east span-10 ]
+@snap[north-east span-5 ]
+<br>
 <br>
 <br>
 <br>
