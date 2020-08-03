@@ -308,6 +308,8 @@ Extract the Downloaded Lab_Material_FW.zip to Home (this will create a directory
 
 @snap[north-west span-100 ]
 <br>
+<br>
+<br>
 <p style="line-height:70%" align="left" ><span style="font-size:0.7em;" >From the downloaded Lab_Material_FW folder, 
 <b>copy</b> and  <b>paste</b> folder "<font face="Consolas">..\edk2-ws</font>" to "<font face="Consolas">C:/FW</font>" <br>
     &nbsp;<i>Note</i>: Overwrite existing files and directories
@@ -385,20 +387,69 @@ Building BaseTools only needs to be done once but setting up local environment a
 <br>
 <br>
 <br>
-<p style="line-height:40%" align="left"><span style="font-size:02.80em;  " ><br><br>
+<p style="line-height:40%" align="left"><span style="font-size:02.80em;  " ><br>
 @color[yellow](&#8678;)
 </span></p>
 @snapend
 
 ---?image=assets/images/binary-strings-black2.jpg
 @title[Stuart CI Build  sub Section]
-<br><br><br><br><br>
+<br><br><br><br><br><br>
 ### <span class="gold"  >Stuart CI Build EmulatorPkg </span>
 <span style="font-size:0.9em" > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>
 
 @snap[east span-20 ]
 ![Stuart-ci](/assets/images/Stuart-CI.png
 @snapend
+
+---?image=/assets/images/slides/Slide20.JPG
+@title[Stuart CI Build  Edk2 ]
+<p align="right"><span class="gold" >@size[1.1em](<b>Stuart CI Build EDK II &nbsp;&nbsp;&nbsp;&nbsp; </b>)</span><br>
+<span style="font-size:0.75em;" ></span></p>
+
+<p style="line-height:70%" align="left" ><span style="font-size:0.75em;" >1. &nbsp;
+Install the pip requirements  (Note, Proxy option needed behind a firewall) 
+</span></p>
+```bash
+ $ pip install --upgrade -r pip-requirements.txt --proxy http://proxy-chain.intel.com:911
+```
+
+<p style="line-height:70%" align="left" ><span style="font-size:0.75em;" >2. &nbsp;
+Get the code dependencies (done only when submodules change)
+</span></p>
+```bash
+$ stuart_setup -c EmulatorPkg/PlatformCI/PlatformBuild.py TOOL_CHAIN_TAG=<Your TAG> -a X64 
+```
+
+<p style="line-height:70%" align="left" ><span style="font-size:0.75em;" >3. &nbsp;
+Update other dependencies (done on new VS Command Prompt)
+</span></p>
+```bash
+$ stuart_update -c EmulatorPkg/PlatformCI/PlatformBuild.py TOOL_CHAIN_TAG=<Your TAG> -a X64 
+```
+
+<p style="line-height:70%" align="left" ><span style="font-size:0.75em;" >4. &nbsp;
+Build the BaseTools (done only when BaseTools change and first time)
+</span></p>
+```bash
+$ python BaseTools\Edk2ToolsBuild.py -t <Your TAG>
+```
+<p style="line-height:70%" align="left" ><span style="font-size:0.75em;" >5. &nbsp;
+Compile the EmulatorPkg
+</span></p>
+```bash
+$ stuart_build -c EmulatorPkg/PlatformCI/PlatformBuild.py TOOL_CHAIN_TAG=<Your TAG> -a X64 BLD_*_ADD_SHELL_STRING=1 
+```
+
+
+<p style="line-height:70%" align="left" ><span style="font-size:0.75em;" >
+Where “&lt;Your TAG&gt;” is either VS2017 or VS2018
+</span></p>
+
+
+
+
+Note:
 
 ---?image=assets/images/binary-strings-black2.jpg
 @title[Build  sub Section]
