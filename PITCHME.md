@@ -203,11 +203,10 @@ Note:
 <br>
 <br>
 <br>
-![git_logo](/assets/images/git_logo.png)
 @snapend
 
 
-@snap[northspan-15 ]
+@snap[north span-15 ]
 <br>
 <br>
 <br>
@@ -221,7 +220,6 @@ Note:
 
 
 @snap[north span-5 ]
-<br>
 <br>
 <br>
 <br>
