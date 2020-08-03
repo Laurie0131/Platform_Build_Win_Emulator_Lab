@@ -210,7 +210,9 @@ Note:
 <br>
 <br>
 <br>
-@box[bg-black text-white rounded my-box-pad2  ](<p style="line-height:60% "><span style="font-size:0.9em;" ><br><br><br><br><br><br><br>&nbsp;</span></p>)
+<br>
+<br>
+@box[bg-black text-white rounded my-box-pad2  ](<p style="line-height:60% "><span style="font-size:0.9em;" ><br><br><br><br><br><br>&nbsp;</span></p>)
 @snapend
 
 @snap[north-west span-45 ]
@@ -220,12 +222,12 @@ Note:
 Open Windows Command Prompt <br><br>
 Make new directory for Workspace: 
 </span></p>
-<p style="line-height:45%" align="left" ><span style="font-size:0.57em; font-family:Consolas;" >&nbsp;&nbsp;
+<p style="line-height:45%" align="left" ><span style="font-size:0.54em; font-family:Consolas;" ><br>&nbsp;&nbsp;
  $ cd / <br>&nbsp;&nbsp;
  $ Mkdir FW<br>&nbsp;&nbsp;
- $ Cd FW<br>&nbsp;&nbsp;
- $ Mkdir Edk2-ws<br>&nbsp;&nbsp;
- $ Cd Edk2-ws<br>&nbsp;&nbsp;
+ $ cd FW<br>&nbsp;&nbsp;
+ $ Mkdir edk2-ws<br>&nbsp;&nbsp;
+ $ cd edk2-ws<br>&nbsp;&nbsp;
 </span></p>
 
 @snapend
@@ -239,19 +241,19 @@ Note:
 <p style="line-height:70%" align="left" ><span style="font-size:0.8em;" >
 From the command prompt use “git clone” to download the EDK II Source
 </span></p>
-```
+```bash
 C:\FW\edk2-WS> git clone https://github.com/tianocore-training/edk2.git
 C:\FW\edk2-WS> git clone https://github.com/tianocore/edk2-libc.git 
 ```
-
-<p style="line-height:70%" align="left" ><span style="font-size:0.8em;" >
+<br>
+<p style="line-height:70%" align="left" ><span style="font-size:0.8em;" ><br>
 Download the Submodules and Checkout the Lab Branch
 </span></p>
-```
-C:\FW\edk2-WS> Cd edk2
-C:\FW\edk2-WS\edk2> git checkout LabBranch
-C:\FW\edk2-WS\edk2> git submodule update –init
-C:\FW\edk2-WS> Cd ..
+```bash
+C:\FW\edk2-wS> cd edk2
+C:\FW\edk2-wS\edk2> git checkout LabBranch
+C:\FW\edk2-wS\edk2> git submodule update –-init
+C:\FW\edk2-wS> cd ..
 
 ```
 
