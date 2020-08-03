@@ -243,6 +243,7 @@ From the command prompt use “git clone” to download the EDK II Source
 ```bash
 C:\FW\edk2-WS> git clone https://github.com/tianocore-training/edk2.git
 C:\FW\edk2-WS> git clone https://github.com/tianocore/edk2-libc.git 
+ 
 ```
 <br>
 <p style="line-height:70%" align="left" ><span style="font-size:0.8em;" ><br>
@@ -253,69 +254,15 @@ C:\FW\edk2-wS> cd edk2
 C:\FW\edk2-wS\edk2> git checkout LabBranch
 C:\FW\edk2-wS\edk2> git submodule update –-init
 C:\FW\edk2-wS> cd ..
-
-```
-
-
----
-@title[Optional - Downloading the Edk II Source]
-<p align="right"><span class="gold" ><b>Download the Edk II Source&nbsp;&nbsp;<i>- Optional</i></b></span></p>
-
-
-<span style="font-size:0.9em" ><i>OPTIONAL</i> - Open a  “git” command prompt and create a source working directory</span>
-```
- C:\> mkdir WS
- C:\> cd WS
-```
-
-<span style="font-size:0.8em" >OPTIONAL - Internet Proxies – (company Firewall used for example)</span>
-
-```
- C:\WS> git config --global https.proxy <proxyname>.domain.com:<port>
- C:\WS> git config --global http.proxy <proxyname>.domain.com:<port>
-```
-
-<span style="font-size:0.8em" >OPTIONAL - Download edk2 source tree using Git command prompt</span>
-
-```
-  C:\WS> git clone --recursive  https://github.com/tianocore/edk2.git
-  C:\WS> git clone  https://github.com/tianocore/edk2-libc.git
  
-
+ 
 ```
-
-<span style="font-size:0.7em" ><b>@color[yellow](NOTE:)</b> Lab Material will have a different “edk2” </span>
-
-
-Note:
-
-OPTIONAL - Open a  “git” command prompt and create a source working directory
-<pre>
-- C:\> mkdir WS
-- C:\> cd WS
-
-- OPTIONAL - Internet Proxies – (company Firewall used for example)
-
-- C:\WS> git config --global https.proxy <proxyname>.domain.com:<port>
-- C:\WS> git config --global http.proxy <proxyname>.domain.com:<port>
-
-- OPTIONAL - Download edk2 source tree using Git command prompt
-- C:\WS> git clone https://github.com/tianocore/edk2.git
-
-</pre>
-
-- NOTE: Lab Material will have a different “edk2”
-
-
----?image=assets/images/binary-strings-black2.jpg
-@title[Setup Lab Material sub Section]
-<br><br><br><br><br>
-## <span class="gold"  >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Setup Lab Material </span>
-<span style="font-size:0.9em" > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lab_Material_FW.zip</span>
+ 
 
 ---
 @title[Download Lab_Material_FW -getting the Source ]
-### <p align="right"><span class="gold" >Download Lab Material</span><br></span></p>
+<p align="right"><span class="gold" >@size[1.1em](<b>Download Lab Material  </b>)</span><br>
+<span style="font-size:0.75em;" >  </span></p>
 <span style="font-size:0.9em" >Download the Lab_Material_FW.zip from : </span> @fa[github gp-bullet-white] <span style="font-size:0.7em"><a href="https://github.com/tianocore-training/Lab_Material_FW/archive/master.zip">github.com Lab_Matrial_FW.zip</a></span><br>
 <br>
 <span style="font-size:0.9em" >OR<br>Use `git clone` to download the Lab_Material_FW<span>
@@ -336,7 +283,7 @@ C:\> git clone https://github.com/tianocore-training/Lab_Material_FW.git
 
 Note:
 
----?image=/assets/images/slides/Slide14.JPG
+---?image=/assets/images/slides/Slide15.JPG
 @title[Build  Edk2 -getting the Source ]
 <p align="right"><span class="gold" >@size[1.1em](<b>Build EDK II  </b>)</span><br>
 <span style="font-size:0.75em;" >– Extract the Source  </span></p>
@@ -345,7 +292,7 @@ Note:
 <br>
 <br>
 <br>
-<p style="line-height:70%" align="left"><span style="font-size:0.75em;  " >1. Extract the Downloaded <font face="Consolas">Lab_Material_FW-master.zip to C:\ </font> </span></p>
+<p style="line-height:70%" align="left"><span style="font-size:0.75em;  " >Extract the Downloaded <font face="Consolas">Lab_Material_FW-master.zip to C:\ </font> </span></p>
 <br>
 @snapend
 
@@ -354,7 +301,7 @@ Note:
 Note:
 Extract the Downloaded Lab_Material_FW.zip to Home (this will create a directory FW )
 
----?image=/assets/images/slides/Slide15.JPG
+---?image=/assets/images/slides/Slide16.JPG
 @title[Build  Edk2 -getting the Source 02]
 <p align="right"><span class="gold" >@size[1.1em](<b>Build EDK II  </b>)</span><br>
 <span style="font-size:0.75em;" > - Copy edk2-ws </span></p>
@@ -364,7 +311,7 @@ Extract the Downloaded Lab_Material_FW.zip to Home (this will create a directory
 <p style="line-height:70%" align="left" ><span style="font-size:0.7em;" >2. Open a VS command prompt <br><br> 3. 
 Create a working space directory "FW" <br>
 <span style="background-color: #000000"><font face="Consolas">@size[.7em](&nbsp;&nbsp; C:&bsol;&gt; mkdir FW &nbsp;&nbsp;&nbsp;&nbsp;) </font></span>
-<br><br>4. From the downloaded Lab_Material_FW folder, <b>copy</b> and <b>paste</b> folder <font face="Consolas">"..\edk2-ws" to "C:/FW"</font>
+<br><br>From the downloaded Lab_Material_FW folder, <b>copy</b> and <b>paste</b> folder <font face="Consolas">"..\edk2-ws" to "C:/FW"</font>
 </span></p>
 
 @snapend
@@ -380,7 +327,7 @@ Note:
    -  paste folder “..\edk2-ws” to C:/FW
 
 
----?image=/assets/images/slides/Slide16.JPG
+---?image=/assets/images/slides/Slide17.JPG
 @title[Build  Edk2 -get Nasm]
 <p align="right"><span class="gold" >@size[1.1em](<b>Build EDK II  </b>)</span><br>
 <span style="font-size:0.75em;" > - Get Nasm </span></p>
@@ -388,7 +335,7 @@ Note:
 @snap[north-west span-70 ]
 <br>
 <br>
-<p style="line-height:70%" align="left" ><span style="font-size:0.7em;" >5.&nbsp;
+<p style="line-height:70%" align="left" ><span style="font-size:0.7em;" >&nbsp;
 Copy<font face="Consolas"> Nasm </font> directory to <font face="Consolas">C:&bsol;</font><br>
 @size[.8em](&lpar;creating <font face="Consolas">C:&bsol;Nasm</font> directory&rpar;)
 </span></p>
@@ -401,45 +348,10 @@ Copy Nasm directory to C:\
 (creating C:\Nasm directory)
 
 
----
-@title[Build  Edk2 -install Python]
-<p align="right"><span class="gold" >@size[1.1em](<b>Build EDK II  </b>)</span><br>
-<span style="font-size:0.75em;" > – Download and install Python </span></p>
-
-
-@snap[north-west span-60 ]
-<br>
-<br>
-<br>
-<br>
-<p style="line-height:80%" align="left"><span style="font-size:0.80em;  " >
- Download and install Python 3.7.x for Windows from: <br> https://www.python.org
-<br>
-<br>
-</span></p>
-
-<br>
-@snapend
-
-@snap[north-east span-45 ]
-<br>
-<br>
-<br>
-<br>
-<br>
-<a href="https://www.python.org">
-![python_logo](assets/images/python-logo@2x.png)</a>
-
-@snapend
-
-
-
-
-Note:
 
 ---
-@title[Build  Edk2 -build BaseTools]
-<p align="right"><span class="gold" >@size[1.1em](<b>Build EDK II  </b>)</span><br>
+@title[Non-Stuart CI Build  Edk2 -build BaseTools]
+<p align="right"><span class="gold" >@size[1.1em](<b>Non-Stuart CI Build EDK II  </b>)</span><br>
 <span style="font-size:0.75em;" > – build <font face="Consolas">BaseTools</font></span></p>
 
 @snap[north-west span-100 ]
@@ -467,9 +379,10 @@ Invoke Edksetup.bat from directory <font face="Consolas">C:/FW/edk2-ws/edk2</fon
 <p style="line-height:45%" align="left" ><span style="font-size:0.5em;" >
 Building BaseTools only needs to be done once but setting up local environment and edksetup.bat needs to be done each new VS prompt session
 </span></p>
+<p style="line-height:65%" align="left" ><span style="font-size:0.7em;" >
+@size[1.2em](@color[yellow](<b>SKIP</b>)) if doing Stuart CI Build with VS2017 or VS2019
+</span></p>
 @snapend
-
-
 
 
 @snap[east span-40 fragment ]
@@ -482,7 +395,15 @@ Building BaseTools only needs to be done once but setting up local environment a
 </span></p>
 @snapend
 
+---?image=assets/images/binary-strings-black2.jpg
+@title[Stuart CI Build  sub Section]
+<br><br><br><br><br>
+## <span class="gold"  >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Stuart CI Build EmulatorPkg </span>
+<span style="font-size:0.9em" > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>
 
+@snap[east span-20 ]
+![Stuart-ci](/assets/images/Stuart-CI.png
+@snapend
 
 ---?image=assets/images/binary-strings-black2.jpg
 @title[Build  sub Section]
