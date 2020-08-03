@@ -203,8 +203,7 @@ Note:
 <p align="right"><span class="gold" >@size[1.1em](<b>Create Workspace Directory  </b>)</span><br>
 <span style="font-size:0.75em;" >  </span></p>
 
-@snap[north-west span-45 ]
-<br>
+@snap[north-west span-40 ]
 <br>
 <br>
 <br>
@@ -215,7 +214,7 @@ Note:
 @box[bg-black text-white rounded my-box-pad2  ](<p style="line-height:60% "><span style="font-size:0.9em;" ><br><br><br><br><br><br>&nbsp;</span></p>)
 @snapend
 
-@snap[north-west span-45 ]
+@snap[north-west span-50 ]
 <br>
 <br>
 <p style="line-height:70%" align="left" ><span style="font-size:0.8em;" >
