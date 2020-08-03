@@ -197,6 +197,65 @@ Note:
 
 Note:
 
+
+---?image=/assets/images/slides/Slide12.JPG
+@title[Create Work Space Directory]
+<p align="right"><span class="gold" >@size[1.1em](<b>Create Workspace Directory  </b>)</span><br>
+<span style="font-size:0.75em;" >  </span></p>
+
+@snap[north-west span-45 ]
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+@box[bg-black text-white rounded my-box-pad2  ](<p style="line-height:60% "><span style="font-size:0.9em;" ><br><br><br><br><br><br><br>&nbsp;</span></p>)
+@snapend
+
+@snap[north-west span-45 ]
+<br>
+<br>
+<p style="line-height:70%" align="left" ><span style="font-size:0.8em;" >
+Open Windows Command Prompt <br><br>
+Make new directory for Workspace: 
+</span></p>
+<p style="line-height:45%" align="left" ><span style="font-size:0.57em; font-family:Consolas;" >&nbsp;&nbsp;
+ $ cd / <br>&nbsp;&nbsp;
+ $ Mkdir FW<br>&nbsp;&nbsp;
+ $ Cd FW<br>&nbsp;&nbsp;
+ $ Mkdir Edk2-ws<br>&nbsp;&nbsp;
+ $ Cd Edk2-ws<br>&nbsp;&nbsp;
+</span></p>
+
+@snapend
+
+Note:
+
+---
+@title[Download the EDK II Source Code ]
+<p align="right"><span class="gold" >@size[1.1em](<b>Download the EDK II Source Code  </b>)</span><br>
+<span style="font-size:0.75em;" >  </span></p>
+<p style="line-height:70%" align="left" ><span style="font-size:0.8em;" >
+From the command prompt use “git clone” to download the EDK II Source
+</span></p>
+```
+C:\FW\edk2-WS> git clone https://github.com/tianocore-training/edk2.git
+C:\FW\edk2-WS> git clone https://github.com/tianocore/edk2-libc.git 
+```
+
+<p style="line-height:70%" align="left" ><span style="font-size:0.8em;" >
+Download the Submodules and Checkout the Lab Branch
+</span></p>
+```
+C:\FW\edk2-WS> Cd edk2
+C:\FW\edk2-WS\edk2> git checkout LabBranch
+C:\FW\edk2-WS\edk2> git submodule update –init
+C:\FW\edk2-WS> Cd ..
+
+```
+
+
 ---
 @title[Optional - Downloading the Edk II Source]
 <p align="right"><span class="gold" ><b>Download the Edk II Source&nbsp;&nbsp;<i>- Optional</i></b></span></p>
