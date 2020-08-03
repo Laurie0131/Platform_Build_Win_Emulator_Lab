@@ -203,12 +203,12 @@ Note:
 <br>
 <br>
 <br>
-<br>
 ![git_logo](/assets/images/git_logo.png)
 @snapend
 
 
-@snap[north-east span-15 ]
+@snap[northspan-15 ]
+<br>
 <br>
 <br>
 <br>
@@ -218,6 +218,22 @@ Note:
 <br>
 ![Python_logo](/assets/images/python-logo@2x.png)
 @snapend
+
+
+@snap[north span-5 ]
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+![git_logo](/assets/images/git_logo.png)
+@snapend
+
 
 
 Note:
