@@ -579,9 +579,9 @@ Note:
   <li><span style="font-size:0.7em" >Open Visual Studio and create a “C++” project </span> </li>
   <li><span style="font-size:0.7em" > (This will take some time to install)</span> </li>
 </ul>  
-<p style="line-height:80%"><span style="font-size:0.8em" >2. If you get a BUILD Error: Check if  RC.Exe compiler not found is the error -<a href="https://gitpitch.com/tianocore-training/Platform_Build_Win_Emulator_Lab/master#/36" > here</a> </span> </p>
+<p style="line-height:80%"><span style="font-size:0.8em" >2. If you get a BUILD Error: Check if  RC.Exe compiler not found is the error -<a href="https://gitpitch.com/tianocore-training/Platform_Build_Win_Emulator_Lab/master#/35" > here</a> </span> </p>
 <p style="line-height:80%"><span style="font-size:0.8em" >3. If you get a BUILD Error: <font face="Consolas">fatal error C1041: cannot open program database</font> … Check 
-<a href="https://gitpitch.com/tianocore-training/Platform_Build_Win_Emulator_Lab/master#/38"> here</a>  </span> </p>
+<a href="https://gitpitch.com/tianocore-training/Platform_Build_Win_Emulator_Lab/master#/36"> here</a>  </span> </p>
 
 
 Note:
