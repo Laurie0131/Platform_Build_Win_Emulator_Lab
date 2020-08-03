@@ -408,42 +408,42 @@ Building BaseTools only needs to be done once but setting up local environment a
 <span style="font-size:0.75em;" ></span></p>
 
 <p style="line-height:70%" align="left" ><span style="font-size:0.75em;" >1. &nbsp;
-Install the pip requirements  (Note, Proxy option needed behind a firewall) 
+Install the pip requirements @size[.8em](&lpar;Note, Proxy option needed behind a firewall&rpar;)
 </span></p>
 ```bash
- $ pip install --upgrade -r pip-requirements.txt --proxy http://proxy-chain.intel.com:911
+$ pip install --upgrade -r pip-requirements.txt --proxy http://proxy-chain.intel.com:911 
 ```
 
 <p style="line-height:70%" align="left" ><span style="font-size:0.75em;" >2. &nbsp;
-Get the code dependencies (done only when submodules change)
+Get the code dependencies @size[.8em](&lpar;done only when submodules change&rpar;)
 </span></p>
 ```bash
-$ stuart_setup -c EmulatorPkg/PlatformCI/PlatformBuild.py TOOL_CHAIN_TAG=<Your TAG> -a X64 
+$ stuart_setup -c EmulatorPkg/PlatformCI/PlatformBuild.py TOOL_CHAIN_TAG=<Your TAG> -a X64
 ```
 
 <p style="line-height:70%" align="left" ><span style="font-size:0.75em;" >3. &nbsp;
-Update other dependencies (done on new VS Command Prompt)
+Update other dependencies @size[.8em](&lpar;done on new VS Command Prompt&rpar;)
 </span></p>
 ```bash
-$ stuart_update -c EmulatorPkg/PlatformCI/PlatformBuild.py TOOL_CHAIN_TAG=<Your TAG> -a X64 
+$ stuart_update -c EmulatorPkg/PlatformCI/PlatformBuild.py TOOL_CHAIN_TAG=<Your TAG> -a X64
 ```
 
 <p style="line-height:70%" align="left" ><span style="font-size:0.75em;" >4. &nbsp;
-Build the BaseTools (done only when BaseTools change and first time)
+Build the BaseTools @size[.8em](&lpar;done only when BaseTools change and first time&rpar;)
 </span></p>
 ```bash
-$ python BaseTools\Edk2ToolsBuild.py -t <Your TAG>
+$ python BaseTools\Edk2ToolsBuild.py -t <Your TAG>
 ```
 <p style="line-height:70%" align="left" ><span style="font-size:0.75em;" >5. &nbsp;
-Compile the EmulatorPkg
+Compile the EmulatorPkg
 </span></p>
 ```bash
-$ stuart_build -c EmulatorPkg/PlatformCI/PlatformBuild.py TOOL_CHAIN_TAG=<Your TAG> -a X64 BLD_*_ADD_SHELL_STRING=1 
+$ stuart_build -c EmulatorPkg/PlatformCI/PlatformBuild.py TOOL_CHAIN_TAG=<Your TAG> -a X64 BLD_*_ADD_SHELL_STRING=1
 ```
 
 
-<p style="line-height:70%" align="left" ><span style="font-size:0.75em;" >
-Where “&lt;Your TAG&gt;” is either VS2017 or VS2018
+<p style="line-height:70%" align="left" ><span style="font-size:0.7em;" >
+Where "&lt;Your TAG&gt;" is either "VS2017" or "VS2018"
 </span></p>
 
 
