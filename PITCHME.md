@@ -451,14 +451,36 @@ Where "&lt;Your TAG&gt;" is either "VS2017" or "VS2018"
 
 Note:
 
+---?image=/assets/images/slides/Slide21.JPG
+@title[Output from CI Stuart Build]
+<p align="right"><span class="gold" >@size[1.1em](<b>Output from CI Stuart Build  </b>)</span><br>
+<span style="font-size:0.75em;" ></span></p>
+
+
+@snap[south-east span-40  ]
+<p style="line-height:50%" align="right"><span style="font-size:0.8em" >
+Finished build
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</span></p>
+@snapend
+
+Note:
+
+
+
 ---?image=assets/images/binary-strings-black2.jpg
-@title[Build  sub Section]
+@title[Non-Stuart CI Build  sub Section]
 <br><br><br><br><br>
-## <span class="gold"  >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Build EmulatorPkg </span>
+### <span class="gold"  >Non-Stuart CI Build EmulatorPkg </span>
 <span style="font-size:0.9em" > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>
 
 
----?image=/assets/images/slides/Slide20.JPG
+---?image=/assets/images/slides/Slide23.JPG
 @title[Build Edk2 -update target.txt]
 <p align="right"><span class="gold" >@size[1.1em](<b>Build EDK II  </b>)</span><br>
 <span style="font-size:0.75em;" > – Update <font face="Consolas">Target.txt</font></span></p>
@@ -559,7 +581,7 @@ Note:
 
 
 
----?image=/assets/images/slides/Slide22.JPG
+---?image=/assets/images/slides/Slide25.JPG
 @title[Build Edk2 -build inside VS Prompt]
 <p align="right"><span class="gold" >@size[1.1em](<b>Build EDK II  </b>)</span><br>
 <span style="font-size:0.75em;" > – Inside VS Prompt</span></p>
@@ -580,8 +602,14 @@ Finished build
 Note:
 - 
 
+---?image=assets/images/binary-strings-black2.jpg
+@title[Run the Emulator Section]
+<br><br><br><br><br>
+### <span class="gold"  >Run the Emulator </span>
+<span style="font-size:0.9em" > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>
 
----?image=/assets/images/slides/Slide23.JPG
+
+---?image=/assets/images/slides/Slide27.JPG
 @title[Build Edk2 -invoke emulator]
 <p align="right"><span class="gold" >@size[1.1em](<b>Invoke Emulation  </b>)</span><span style="font-size:0.75em;" ></span></p>
 
@@ -606,7 +634,7 @@ run <font face="Consolas">@color[yellow](WinHost.exe) </font> from:<br>&nbsp;&nb
 
 Note:
 
----?image=/assets/images/slides/Slide24.JPG
+---?image=/assets/images/slides/Slide28.JPG
 @title[Build Edk2 -exit emulator]
 <p align="right"><span class="gold" >@size[1.1em](<b>Emulator at Shell Prompt  </b>)</span><span style="font-size:0.75em;" ></span></p>
 
@@ -688,7 +716,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWIS
 ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION, EVEN IF ADVISED OF THE POSSIBILITY 
 OF SUCH DAMAGE.
 
-Copyright (c) 2019, Intel Corporation. All rights reserved.
+Copyright (c) 2020, Intel Corporation. All rights reserved.
 **/
 
 ```
@@ -697,7 +725,7 @@ Copyright (c) 2019, Intel Corporation. All rights reserved.
 ---?image=assets/images/binary-strings-black2.jpg
 @title[Backup Section]
 <br><br><br><br><br>
-## <span class="gold"  >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Back up</span>
+## <span class="gold"  >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Backup</span>
 <span style="font-size:0.9em" > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
 
 ---  
