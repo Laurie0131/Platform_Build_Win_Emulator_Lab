@@ -12,7 +12,7 @@
 Note:
   PITCHME.md for UEFI / EDK II Training  Platform Build Win Lab
 
-  Copyright (c) 2019, Intel Corporation. All rights reserved.<BR>
+  Copyright (c) 2020, Intel Corporation. All rights reserved.<BR>
 
   Redistribution and use in source (original document form) and 'compiled'
   forms (converted to PDF, epub, HTML and other formats) with or without
@@ -170,12 +170,32 @@ Note:
 
 
 ---?image=assets/images/binary-strings-black2.jpg
-@title[Lab 1 -Build OVMF Section]
+@title[Lab 1 -Build Emulator Section]
 <br><br><br><br><br>
 ## <span class="gold"  >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Build Emulator</span>
 <span style="font-size:0.9em" > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Setup EmulatorPkg to build and run emulation <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;w/ Windows</span>
 
+---
+@title[Prerequisites]
+<p align="right"><span class="gold" >@size[1.1em](<b> Prerequisites </b>)</span><br>
+<span style="font-size:0.75em;" >- Done Before Class  </span></p>
 
+<ul style="list-style-type:disc; line-height:0.7;">
+<li><span style="font-size:0.7em">Windows 10: &nbsp;&nbsp; @fa[windows gp-bullet-cyan] </span></li>
+<ul style="list-style-type:disc; line-height:0.65;">
+  <li><span style="font-size:0.65em">Continuous Integration (CI) - Stuart CI Build with  Visual Studio VS2017 or VS2019  </span></li>
+  <li><span style="font-size:0.65em">Non Stuart CI - Visual Studio VS2015, VS2017 or VS2019  </span></li>
+  <li><span style="font-size:0.65em">Windows SDK (for rc) & Windows WDK (for Capsules)  </span></li>
+</ul>
+
+<li><span style="font-size:0.7em"> Python 3.7.x or greater and /Scripts directories on Path: <a href="https://www.python.org/">Link</a> to download &nbsp; @fa[python gp-bullet-gold] </span></li>
+<li><span style="font-size:0.7em">Git for Windows on Path : <a href="http://git-scm.com/download/win">Link</a>  </span></li>
+<li><span style="font-size:0.7em"> NASM  for Win64 :<a href="https://www.nasm.us/pub/nasm/releasebuilds/2.12.02/win64/"> Link </a> </span></li>
+</ul>
+
+
+
+Note:
 
 ---
 @title[Optional - Downloading the Edk II Source]
