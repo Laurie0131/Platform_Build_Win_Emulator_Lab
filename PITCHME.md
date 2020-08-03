@@ -266,13 +266,15 @@ C:\FW\edk2-wS> cd ..
 @title[Download Lab_Material_FW -getting the Source ]
 <p align="right"><span class="gold" >@size[1.1em](<b>Download Lab Material  </b>)</span><br>
 <span style="font-size:0.75em;" >  </span></p>
-<span style="font-size:0.9em" >Download the Lab_Material_FW.zip from : </span> @fa[github gp-bullet-white] <span style="font-size:0.7em"><a href="https://github.com/tianocore-training/Lab_Material_FW/archive/master.zip">github.com Lab_Matrial_FW.zip</a></span><br>
+<p style="line-height:80%" align="left" ><span style="font-size:0.85em" >Download the Lab_Material_FW.zip from : </span> @fa[github gp-bullet-white] 
+<span style="font-size:0.7em"><a href="https://github.com/tianocore-training/Lab_Material_FW/archive/master.zip">github.com Lab_Matrial_FW.zip</a>
+</span></p>
 <br>
-<span style="font-size:0.9em" >OR<br>Use `git clone` to download the Lab_Material_FW<span>
+<span style="font-size:0.85em" >OR<br>Use "git clone" to download the Lab_Material_FW<span>
 ```bash
 C:\> git clone https://github.com/tianocore-training/Lab_Material_FW.git
 ```
-<span style="font-size:0.9em" >Directory Lab_Material_FW will be created</span>
+<span style="font-size:0.85em" >Directory Lab_Material_FW will be created</span>
 ```
    FW 
     - Documentation 
