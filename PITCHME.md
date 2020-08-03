@@ -390,51 +390,6 @@ Copy Nasm directory to C:\
 
 
 
----
-@title[Non-Stuart CI Build  Edk2 -build BaseTools]
-<p align="right"><span class="gold" >@size[1.1em](<b>Non-Stuart CI Build EDK II  </b>)</span><br>
-<span style="font-size:0.75em;" > – build <font face="Consolas">BaseTools</font></span></p>
-
-@snap[north-west span-100 ]
-<br>
-<br>
-<p style="line-height:60%" align="left" ><span style="font-size:0.7em;" >
-Open VS Command prompt and Cd to work space directory <br>
-<span style="background-color: #000000"><font face="Consolas">
-@size[.7em](&nbsp;&nbsp;cd  C:&bsol;&gt;FW\edk2-ws &nbsp;&nbsp;&nbsp;&nbsp;) </font></span> <br>
-<br>
-Setup the local environment: (see batch file setenv.bat )<br>
-<span style="background-color: #000000"><font face="Consolas">
-@size[.7em](&nbsp;&nbsp;$&gt; set WORKSPACE=%CD% &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <br>)
-@size[.7em](&nbsp;&nbsp;$&gt; set PACKAGES_PATH=%WORKSPACE%\edk2;%WORKSPACE%\edk2-libc  &nbsp;&nbsp;  )</font></span> <br>
-<br>
-Invoke Edksetup.bat from directory <font face="Consolas">C:/FW/edk2-ws/edk2</font> to Build <font face="Consolas">BaseTools </font><br>
-<span style="background-color: #000000"><font face="Consolas">
-@size[.7em](&nbsp;&nbsp;$&gt; cd edk2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>)
-@size[.7em](&nbsp;&nbsp;$&gt; edksetup.bat Rebuild&nbsp;&nbsp;&nbsp;&nbsp;)</font></span> <br>
-</span></p>
-<br>
-@snapend
-
-@snap[south-west span-100 ]
-<p style="line-height:45%" align="left" ><span style="font-size:0.5em;" >
-Building BaseTools only needs to be done once but setting up local environment and edksetup.bat needs to be done each new VS prompt session
-</span></p>
-<p style="line-height:65%" align="left" ><span style="font-size:0.7em;" >
-@size[1.2em](@color[yellow](<b>SKIP</b>)) if doing Stuart CI Build with VS2017 or VS2019
-</span></p>
-@snapend
-
-
-@snap[east span-40 fragment ]
-<br>
-<br>
-<br>
-<br>
-<p style="line-height:40%" align="left"><span style="font-size:02.80em;  " ><br>
-@color[yellow](&#8678;)
-</span></p>
-@snapend
 
 ---?image=assets/images/binary-strings-black2.jpg
 @title[Stuart CI Build  sub Section]
@@ -525,6 +480,51 @@ Note:
 ### <span class="gold"  >Non-Stuart CI Build EmulatorPkg </span>
 <span style="font-size:0.9em" > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>
 
+
+---
+@title[Non-Stuart CI Build  Edk2 -build BaseTools]
+<p align="right"><span class="gold" >@size[1.1em](<b>Non-Stuart CI Build EDK II  </b>)</span><br>
+<span style="font-size:0.75em;" > – build <font face="Consolas">BaseTools</font></span></p>
+
+@snap[north-west span-100 ]
+<br>
+<br>
+<p style="line-height:60%" align="left" ><span style="font-size:0.7em;" >
+Open VS Command prompt and Cd to work space directory <br>
+<span style="background-color: #000000"><font face="Consolas">
+@size[.7em](&nbsp;&nbsp;cd  C:&bsol;&gt;FW\edk2-ws &nbsp;&nbsp;&nbsp;&nbsp;) </font></span> <br>
+<br>
+Setup the local environment: (see batch file setenv.bat )<br>
+<span style="background-color: #000000"><font face="Consolas">
+@size[.7em](&nbsp;&nbsp;$&gt; set WORKSPACE=%CD% &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <br>)
+@size[.7em](&nbsp;&nbsp;$&gt; set PACKAGES_PATH=%WORKSPACE%\edk2;%WORKSPACE%\edk2-libc  &nbsp;&nbsp;  )</font></span> <br>
+<br>
+Invoke Edksetup.bat from directory <font face="Consolas">C:/FW/edk2-ws/edk2</font> to Build <font face="Consolas">BaseTools </font><br>
+<span style="background-color: #000000"><font face="Consolas">
+@size[.7em](&nbsp;&nbsp;$&gt; cd edk2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>)
+@size[.7em](&nbsp;&nbsp;$&gt; edksetup.bat Rebuild&nbsp;&nbsp;&nbsp;&nbsp;)</font></span> <br>
+</span></p>
+<br>
+@snapend
+
+@snap[south-west span-100 ]
+<p style="line-height:45%" align="left" ><span style="font-size:0.5em;" >
+Building BaseTools only needs to be done once but setting up local environment and edksetup.bat needs to be done each new VS prompt session
+</span></p>
+@snapend
+
+
+@snap[east span-40 fragment ]
+<br>
+<br>
+<br>
+<br>
+<p style="line-height:40%" align="left"><span style="font-size:02.80em;  " ><br>
+@color[yellow](&#8678;)
+</span></p>
+@snapend
+
+Note:
 
 ---?image=/assets/images/slides/Slide23.JPG
 @title[Build Edk2 -update target.txt]
