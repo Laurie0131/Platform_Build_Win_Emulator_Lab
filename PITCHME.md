@@ -277,7 +277,7 @@ Note:
 <p align="right"><span class="gold" >@size[1.1em](<b>Download the EDK II Source Code  </b>)</span><br>
 <span style="font-size:0.75em;" >  </span></p>
 <p style="line-height:80%" align="left" ><span style="font-size:0.9em;" >
-Download the open source EDK II &nbsp;@fa[github gp-bullet-white]
+Download the open source EDK II from Github &nbsp;@fa[github gp-bullet-white]
 </span></p>
 <p style="line-height:70%" align="left" ><span style="font-size:0.78em;" >
 From the command prompt use “git clone” to download 
