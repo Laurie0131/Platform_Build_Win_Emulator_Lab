@@ -395,7 +395,7 @@ Copy Nasm directory to C:\
 @title[Stuart CI Build  sub Section]
 <br><br><br><br><br><br>
 ### <span class="gold"  >Stuart CI Build EmulatorPkg </span>
-<span style="font-size:0.9em" > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>
+<span style="font-size:0.9em" > @color[yellow](SKIP) if doing a Non-Stuart CI Build&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>
 
 @snap[east span-20 ]
 ![Stuart-ci](/assets/images/Stuart-CI.png
@@ -478,7 +478,7 @@ Note:
 @title[Non-Stuart CI Build  sub Section]
 <br><br><br><br><br>
 ### <span class="gold"  >Non-Stuart CI Build EmulatorPkg </span>
-<span style="font-size:0.9em" > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>
+<span style="font-size:0.9em" > @color[yellow](SKIP) if doing a Stuart CI Build &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>
 
 
 ---
