@@ -9,6 +9,10 @@
 
 <br>
 <span style="font-size:0.75em" ><a href='http://www.tianocore.org'>tianocore.org</a></span>
+<br>
+<span style="font-size:0.75em" >See also <a href="https://github.com/tianocore-training/Platform_Build_Win_Emulator_Lab/blob/master/Lab_guide.md">Lab_Guide.md</a> for Copy & Paste Examples in Labs
+
+
 Note:
   PITCHME.md for UEFI / EDK II Training  Platform Build Win Lab
 
