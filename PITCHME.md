@@ -527,8 +527,8 @@ Building BaseTools only needs to be done once but setting up local environment a
 Note:
 
 ---?image=/assets/images/slides/Slide23.JPG
-@title[Build Edk2 -update target.txt]
-<p align="right"><span class="gold" >@size[1.1em](<b>Build EDK II  </b>)</span><br>
+@title[Non-Stuart CI Build Edk2 -update target.txt]
+<p align="right"><span class="gold" >@size[1.1em](<b>Non-Stuart CI Build EDK II  </b>)</span><br>
 <span style="font-size:0.75em;" > – Update <font face="Consolas">Target.txt</font></span></p>
 
 @snap[north-west span-70 ]
